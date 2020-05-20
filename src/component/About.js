@@ -1,9 +1,9 @@
-import React from "react";
-import ImgAbout from "../images/about.png";
-import styled from "styled-components";
 import AboutWork from "../images/about-work-flow.png";
 import DesignElements from "../images/design-elements.png";
-import "../fonts/index.scss";
+import ImgAbout from "../images/about.png";
+import React from "react";
+import styled from "styled-components";
+
 export function RenderAbout() {
   return (
     <About>

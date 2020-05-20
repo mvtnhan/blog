@@ -1,16 +1,14 @@
+import BgWorks from "../images/worksbg.jpg";
+import CloudVPS from "../images/cloudvps.png";
+import DesignElements from "../images/design-elements.png";
+import FFVentureCapital from "../images/ff-venture-capital.png";
+import Host365 from "../images/host365.png";
+import ImgWorks from "../images/works.png";
+import LestHost from "../images/lets-host.png";
+import MedievalWall from "../images/medieval-wall.png";
+import RavenDB from "../images/ravendb.png";
 import React from "react";
 import styled from "styled-components";
-
-import LestHost from "../images/lets-host.png";
-import FFVentureCapital from "../images/ff-venture-capital.png";
-import RavenDB from "../images/ravendb.png";
-import CloudVPS from "../images/cloudvps.png";
-import Host365 from "../images/host365.png";
-import MedievalWall from "../images/medieval-wall.png";
-import BgWorks from "../images/worksbg.jpg";
-import ImgWorks from "../images/works.png";
-import DesignElements from "../images/design-elements.png";
-import "../fonts/index.scss";
 
 export function RenderMoreWorks() {
   return (

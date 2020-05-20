@@ -1,5 +1,3 @@
-import "../fonts/index.scss";
-
 import DesignElements from "../images/design-elements.png";
 import { Image } from "semantic-ui-react";
 import ImgIntro from "../images/intro.png";

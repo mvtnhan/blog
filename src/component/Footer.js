@@ -1,11 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { Social } from "./Social.js";
-// import { Image, Popup } from "semantic-ui-react";
 import DesignElements from "../images/design-elements.png";
+import React from "react";
+import { Social } from "./Social.js";
 import Tooltip from "@material-ui/core/Tooltip";
+import styled from "styled-components";
 
-import "../fonts/index.scss";
 export function RenderFooter() {
   const Sociallist = [
     {

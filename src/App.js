@@ -1,4 +1,5 @@
 import "./reset.scss";
+import "./fonts/index.scss";
 
 import Background from "./images/bodybg.jpg";
 import React from "react";
