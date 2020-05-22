@@ -1,12 +1,10 @@
-import React from "react";
-// import { Image, Popup } from "semantic-ui-react";
-import ImgContact from "../images/contact.png";
-import Skills from "../images/skills.png";
-import styled from "styled-components";
-import DesignElements from "../images/design-elements.png";
 import BgContact from "../images/contactbg.jpg";
-import "../fonts/index.scss";
+import DesignElements from "../images/design-elements.png";
+import ImgContact from "../images/contact.png";
+import React from "react";
+import Skills from "../images/skills.png";
 import { Tooltip } from "@material-ui/core";
+import styled from "styled-components";
 
 export function RenderContact() {
   return (
@@ -38,12 +36,6 @@ export function RenderContact() {
           >
             <img src={Skills} width="225" height="75" alt="Skill.img" />
           </Tooltip>
-          {/* <Popup
-            className="TooltipCraftsman"
-            trigger={<Image src={Skills} width="225" height="75" />}
-            content="HTML5 Powered with CSS3 / Styling, Device Access, Performance & Integration, and Semantics"
-            position="bottom center"
-          /> */}
         </div>
         <a href="#/" className="ImgSendMessage">
           <em>Send</em>Message

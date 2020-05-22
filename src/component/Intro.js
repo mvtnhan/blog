@@ -1,5 +1,3 @@
-import "../fonts/index.scss";
-
 import DesignElements from "../images/design-elements.png";
 import { Image } from "semantic-ui-react";
 import ImgIntro from "../images/intro.png";
@@ -35,7 +33,9 @@ export function RenderIntro() {
           </a>
         </div>
       </ImgScraftsman>
-      <h2>I'm Marijan, Amsterdam based UX Designer working with Booking.com</h2>
+      <h2>
+        Hello, I'm David, I'm a fresher on my way to be a frontend engineer
+      </h2>
     </Intro>
   );
 }
