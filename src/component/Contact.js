@@ -36,12 +36,6 @@ export function RenderContact() {
           >
             <img src={Skills} width="225" height="75" alt="Skill.img" />
           </Tooltip>
-          {/* <Popup
-            className="TooltipCraftsman"
-            trigger={<Image src={Skills} width="225" height="75" />}
-            content="HTML5 Powered with CSS3 / Styling, Device Access, Performance & Integration, and Semantics"
-            position="bottom center"
-          /> */}
         </div>
         <a href="#/" className="ImgSendMessage">
           <em>Send</em>Message

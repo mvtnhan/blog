@@ -37,39 +37,16 @@ export function RenderMoreWorks() {
         </a>
         <span className="QuestionOpened">“</span>
         <p>
-          On every project my goal is to create an functional and consistent UX
-          which serves its main purpose. I always check if every detail is in
-          the right place and implemented according to the latest web standards.
+          I consider myself a positive person as I’ve never hesitated to
+          encounter new challenges. With my passion, I’m willing to learn and
+          able to work under a high workload so that I can have a chance to
+          create a better version of myself day after day.
         </p>
         <span className="QuestionClosed">”</span>
       </Container>
     </MoreWorks>
   );
 }
-
-// const ImgMoreWorks = styled.a`
-//   position: absolute;
-//   left: 270px;
-//   bottom: 315px;
-//   width: 103px;
-//   height: 80px;
-//   font-weight: 300;
-//   display: block;
-//   color: #ffffff;
-//   text-transform: uppercase;
-//   background: url(${DesignElements}) no-repeat 0px -310px !important;
-//   /* @include ImgDesign(0px, -310px); */
-//   transition: transform 1s;
-//   overflow: hidden;
-//   transform: rotate(0deg);
-//   line-height: 28px;
-//   padding: 24px 0 0 0;
-//   text-align: center;
-//   font-size: 30px;
-//   &:hover {
-//     transform: rotate(-15deg);
-//   }
-// `;
 
 const Container = styled.div`
   max-width: 984px;
@@ -87,6 +64,7 @@ const Container = styled.div`
     width: 174px;
     height: 174px;
     position: absolute;
+
     img {
       width: 160px;
       height: 160px;
@@ -134,13 +112,13 @@ const Container = styled.div`
   }
 
   .QuestionOpened {
-    left: 304px;
+    left: 320px;
     top: 505px;
   }
 
   .QuestionClosed {
-    right: 360px;
-    bottom: 100px;
+    right: 382px;
+    bottom: 78px;
   }
 
   p {
@@ -148,7 +126,7 @@ const Container = styled.div`
     margin: 505px auto auto 305px;
     position: absolute;
     color: #333333;
-    width: 375px;
+    width: 365px;
     font-size: 18px;
     line-height: 130%;
   }
@@ -201,13 +179,13 @@ const MoreWorks = styled.section`
       }
 
       .QuestionOpened {
-        left: 276px;
+        left: 280px;
         top: 430px;
       }
 
       .QuestionClosed {
-        right: 290px;
-        bottom: 107px;
+        right: 295px;
+        bottom: 82px;
       }
     }
 

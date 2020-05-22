@@ -8,7 +8,7 @@ export function RenderAbout() {
   return (
     <About>
       <Container>
-        <div className="AboutSection">
+        <div className="AboutSectionOne">
           <img src={ImgAbout} alt="About" width="727" height="375" />
           <a href="#/" className="PhotoMore">
             Craftsman <em>Photo</em>
@@ -33,7 +33,7 @@ export function RenderAbout() {
             </p>
           </article>
         </div>
-        <div className="AboutSection">
+        <div className="AboutSectionTwo">
           <article className="HardAndPlay">
             <h3>I Work Hard and Play Hard </h3>
             <p>
@@ -72,7 +72,8 @@ const Container = styled.div`
   margin: 0 auto;
   clear: both;
 
-  .AboutSection {
+  .AboutSectionOne,
+  .AboutSectionTwo {
     display: flex;
     position: relative;
 
@@ -187,6 +188,10 @@ const About = styled.div`
     ${Container} {
       width: 768px;
 
+      .GreatUX {
+        margin: 96px 0 0 20px;
+      }
+
       img {
         display: block;
         width: 330px;
@@ -201,13 +206,17 @@ const About = styled.div`
         font-size: 17px !important;
       }
 
-      .AboutSection {
+      .AboutSectionOne,
+      .AboutSectionTwo {
         .HardAndPlay {
           width: 360px !important;
         }
+        .GreatUX {
+          margin: 96px 0 0 20px;
+        }
 
         strong {
-          right: -30px !important;
+          right: -35px !important;
         }
       }
     }
@@ -231,7 +240,8 @@ const About = styled.div`
         font-size: 17px !important;
       }
 
-      .AboutSection {
+      .AboutSectionOne,
+      .AboutSectionTwo {
         padding: 10px;
 
         .HardAndPlay {
@@ -249,7 +259,8 @@ const About = styled.div`
     ${Container} {
       width: 100%;
 
-      .AboutSection {
+      .AboutSectionOne,
+      .AboutSectionTwo {
         padding: 20px;
       }
     }
