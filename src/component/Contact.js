@@ -72,7 +72,6 @@ const Container = styled.div`
       height: 31px;
       padding: 3px 15px 0 15px;
       background: url(${DesignElements}) no-repeat -174px 0px;
-      /* @include ImgDesign(-174px, 0px); */
       margin-bottom: 10px;
     }
 
@@ -81,7 +80,6 @@ const Container = styled.div`
       height: 155px;
       padding: 9px 15px 0 15px;
       background: url(${DesignElements}) no-repeat -174px -102px;
-      /* @include ImgDesign(-174px, -102px); */
       resize: none;
     }
   }
@@ -99,7 +97,6 @@ const Container = styled.div`
     color: #fff;
     text-transform: uppercase;
     background: url(${DesignElements}) no-repeat 0px -310px;
-    /* @include ImgDesign(0px, -310px); */
     border: 0px;
     transition: transform 1s;
     overflow: hidden;

@@ -30,19 +30,13 @@ export function RenderFooter() {
   return (
     <Footer>
       <Container>
-        <p>Copyright © 2014 Web Craftsman. Contact Preferred Via:</p>
+        <p>Copyright © 2020 Web mvtnhan. Contact Preferred Via:</p>
         <div className="IconFooter">
           {Sociallist.map((social) => (
             <a href={social.link} key={social.content}>
               <Tooltip title={social.content} placement="top">
                 <img className={social.img} alt="" />
               </Tooltip>
-              {/* <Popup
-                className="TooltipCraftsman"
-                trigger={<Image className={social.img} />}
-                content={social.content}
-                position="top center"
-              /> */}
             </a>
           ))}
         </div>

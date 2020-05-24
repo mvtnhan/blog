@@ -59,7 +59,6 @@ const Container = styled.div`
 
   a {
     background: url(${DesignElements}) no-repeat 0px -136px;
-    /* @include ImgDesign(0px, -136px); */
     display: block;
     width: 174px;
     height: 174px;
@@ -83,7 +82,6 @@ const Container = styled.div`
     color: #ffffff;
     text-transform: uppercase;
     background: url(${DesignElements}) no-repeat 0px -310px;
-    /* @include ImgDesign(0px, -310px); */
     transition: transform 1s;
     overflow: hidden;
     transform: rotate(0deg);
@@ -117,7 +115,7 @@ const Container = styled.div`
   }
 
   .QuestionClosed {
-    right: 382px;
+    left: 588px;
     bottom: 78px;
   }
 
@@ -184,7 +182,7 @@ const MoreWorks = styled.section`
       }
 
       .QuestionClosed {
-        right: 295px;
+        left: 460px;
         bottom: 82px;
       }
     }

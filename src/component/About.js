@@ -7,67 +7,68 @@ import styled from "styled-components";
 export function RenderAbout() {
   return (
     <About>
-      <Container>
-        <div className="AboutSectionOne">
-          <img src={ImgAbout} alt="About" width="727" height="375" />
-          <a href="#/" className="PhotoMore">
-            Craftsman <em>Photo</em>
+      <div className="AboutSectionOne">
+        <img src={ImgAbout} alt="About" width="727" height="375" />
+        <a href="#/" className="PhotoMore">
+          Craftsman <em>Photo</em>
+        </a>
+        <article>
+          <h2>My Greetings & Handshake to You</h2>
+          <p>
+            Welcome to my little place on the internet. I’m Marijan, Web
+            Designer and UX professional working with{" "}
+            <a href="#/">Booking.com</a> on world's #1 accomodation site.
+          </p>
+          <p>
+            Working within role of Web and UX Designer since 2006. On each
+            project I bring a diversified set of skills which have been gathered
+            from projects of all sizes, versatile design styles and different
+            markets.
+          </p>
+          <p>
+            I’m specialized in web design and development using handwritten
+            HTML, CSS and jQuery framework. Love working with WordPress, also
+            have considerable experience with other platforms as well.
+          </p>
+        </article>
+      </div>
+      <div className="AboutSectionTwo">
+        <article className="HardAndPlay">
+          <h3>I Work Hard and Play Hard </h3>
+          <p>
+            I consider stable communication and quick response important factors
+            of project success. So when working together I think of me & my
+            client as one compact team in which everyone will listen to each
+            other and try to do their best. I work with "open" design approach
+            which means that client & customer (if it's possible) is constantly
+            involved in project creation. So if you are ready to dig in with me
+            and produce some great stuff which will not only look great but also
+            achieve its goals, go get things rolling and{" "}
+            <a href="#/">Contact me</a>
+          </p>
+        </article>
+        <div className="GreatUX">
+          <a href="#/">
+            Defined<span>Purpose</span>
           </a>
-          <article>
-            <h2>My Greetings & Handshake to You</h2>
-            <p>
-              Welcome to my little place on the internet. I’m Marijan, Web
-              Designer and UX professional working with{" "}
-              <a href="#/">Booking.com</a> on world's #1 accomodation site.
-            </p>
-            <p>
-              Working within role of Web and UX Designer since 2006. On each
-              project I bring a diversified set of skills which have been
-              gathered from projects of all sizes, versatile design styles and
-              different markets.
-            </p>
-            <p>
-              I’m specialized in web design and development using handwritten
-              HTML, CSS and jQuery framework. Love working with WordPress, also
-              have considerable experience with other platforms as well.
-            </p>
-          </article>
+          <a href="#/">
+            Defined<span>Purpose</span>
+          </a>
+          <a href="#/">
+            Defined<span>Purpose</span>
+          </a>
+          <strong>Efficient Web Presence</strong>
+          <p className="Conclusion">GreatUX/UI</p>
         </div>
-        <div className="AboutSectionTwo">
-          <article className="HardAndPlay">
-            <h3>I Work Hard and Play Hard </h3>
-            <p>
-              I consider stable communication and quick response important
-              factors of project success. So when working together I think of me
-              & my client as one compact team in which everyone will listen to
-              each other and try to do their best. I work with "open" design
-              approach which means that client & customer (if it's possible) is
-              constantly involved in project creation. So if you are ready to
-              dig in with me and produce some great stuff which will not only
-              look great but also achieve its goals, go get things rolling and{" "}
-              <a href="#/">Contact me</a>
-            </p>
-          </article>
-          <div className="GreatUX">
-            <a href="#/">
-              Defined<span>Purpose</span>
-            </a>
-            <a href="#/">
-              Defined<span>Purpose</span>
-            </a>
-            <a href="#/">
-              Defined<span>Purpose</span>
-            </a>
-            <strong>Efficient Web Presence</strong>
-            <p className="Conclusion">GreatUX</p>
-          </div>
-        </div>
-      </Container>
+      </div>
     </About>
   );
 }
 
-const Container = styled.div`
+const About = styled.div`
+  overflow: hidden;
+  padding-top: 80px;
+
   max-width: 984px;
   margin: 0 auto;
   clear: both;
@@ -90,7 +91,6 @@ const Container = styled.div`
       color: #fff;
       text-transform: uppercase;
       background: url(${DesignElements}) no-repeat 0px -310px;
-      /* @include ImgDesign(0px, -310px); */
       border: 0px;
       transition: transform 1s;
       overflow: hidden;
@@ -178,91 +178,82 @@ const Container = styled.div`
       }
     }
   }
-`;
-
-const About = styled.div`
-  overflow: hidden;
-  padding-top: 80px;
 
   @media (max-width: 980px) {
-    ${Container} {
-      width: 768px;
+    width: 768px;
 
+    .GreatUX {
+      margin: 96px 0 0 20px;
+    }
+
+    img {
+      display: block;
+      width: 330px;
+      height: 330px;
+    }
+
+    h2 {
+      font-size: 30px !important;
+    }
+
+    p {
+      font-size: 17px !important;
+    }
+
+    .AboutSectionOne,
+    .AboutSectionTwo {
+      .HardAndPlay {
+        width: 360px !important;
+      }
       .GreatUX {
         margin: 96px 0 0 20px;
       }
 
-      img {
-        display: block;
-        width: 330px;
-        height: 330px;
-      }
-
-      h2 {
-        font-size: 30px !important;
-      }
-
-      p {
-        font-size: 17px !important;
-      }
-
-      .AboutSectionOne,
-      .AboutSectionTwo {
-        .HardAndPlay {
-          width: 360px !important;
-        }
-        .GreatUX {
-          margin: 96px 0 0 20px;
-        }
-
-        strong {
-          right: -35px !important;
-        }
+      strong {
+        width: 100px !important;
+        top: 40px !important;
+        right: -10px !important;
       }
     }
   }
 
   @media (max-width: 860px) {
-    ${Container} {
-      width: 580px;
+    width: 580px;
 
-      img,
-      .PhotoMore,
-      .GreatUX {
-        display: none !important;
+    img,
+    .PhotoMore,
+    .GreatUX {
+      display: none !important;
+    }
+
+    h2 {
+      font-size: 30px !important;
+    }
+
+    p {
+      font-size: 17px !important;
+    }
+
+    .AboutSectionOne,
+    .AboutSectionTwo {
+      padding: 10px;
+
+      .HardAndPlay {
+        width: 760px !important;
       }
 
-      h2 {
-        font-size: 30px !important;
-      }
-
-      p {
-        font-size: 17px !important;
-      }
-
-      .AboutSectionOne,
-      .AboutSectionTwo {
-        padding: 10px;
-
-        .HardAndPlay {
-          width: 760px !important;
-        }
-
-        strong {
-          right: -30px !important;
-        }
+      strong {
+        right: -30px !important;
       }
     }
   }
 
   @media (max-width: 540px) {
-    ${Container} {
-      width: 100%;
+    width: 100%;
 
-      .AboutSectionOne,
-      .AboutSectionTwo {
-        padding: 20px;
-      }
+    .AboutSectionOne,
+    .AboutSectionTwo {
+      padding: 20px;
     }
   }
 `;

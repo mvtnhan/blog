@@ -33,9 +33,7 @@ export function RenderIntro() {
           </a>
         </div>
       </ImgScraftsman>
-      <h2>
-        Hello, I'm David, I'm a fresher on my way to be a frontend engineer
-      </h2>
+      <h2>Hi, I'm Nhan. I'm a fresher on my way to be a frontend engineer</h2>
     </Intro>
   );
 }
@@ -53,7 +51,6 @@ const AroundFindOutMore = styled.div`
   width: 190px;
   height: 190px;
   background: url(${DesignElements}) no-repeat 0px -430px;
-  /* @include ImgDesign(0px, -430px); */
   left: 518px;
   bottom: 320px;
   transition-property: transform;
@@ -114,7 +111,7 @@ const Intro = styled.section`
       a {
         left: 18px;
         top: 18px;
-        height: 30px;
+        height: 25px;
         width: 100px;
         position: absolute;
         transition: all 0.4s ease-in-out 0s;
@@ -146,7 +143,6 @@ const Intro = styled.section`
       height: 107px;
       position: relative;
       background: url(${DesignElements}) no-repeat 0px 0px;
-      /* @include ImgDesign(0px, 0px); */
       text-transform: uppercase;
       color: #ffffff;
       font-size: 25px;
