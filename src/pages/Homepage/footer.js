@@ -1,10 +1,13 @@
-import DesignElements from "../images/design-elements.png";
 import React from "react";
-import { Social } from "./Social.js";
-import Tooltip from "@material-ui/core/Tooltip";
 import styled from "styled-components";
+import Tooltip from "@material-ui/core/Tooltip";
 
-export function RenderFooter() {
+import { Social } from "./url.js";
+
+import DesignElements from "./images/design-elements.png";
+import GrayBackGround from "./images/section-bg-gray.jpg";
+
+export function Footer() {
   const Sociallist = [
     {
       link: Social.email,
@@ -28,36 +31,33 @@ export function RenderFooter() {
     },
   ];
   return (
-    <Footer>
-      <Container>
-        <p>Copyright © 2020 Web mvtnhan. Contact Preferred Via:</p>
-        <div className="IconFooter">
-          {Sociallist.map((social) => (
-            <a href={social.link} key={social.content}>
-              <Tooltip title={social.content} placement="top">
-                <img className={social.img} alt="" />
-              </Tooltip>
-            </a>
-          ))}
-        </div>
-      </Container>
-    </Footer>
+    <StyledFooter>
+      <p>Copyright © 2020 Web mvtnhan. Contact Preferred Via:</p>
+      <div className="IconFooter">
+        {Sociallist.map((social) => (
+          <a href={social.link} key={social.content}>
+            <Tooltip title={social.content} placement="top">
+              <img className={social.img} alt="" />
+            </Tooltip>
+          </a>
+        ))}
+      </div>
+    </StyledFooter>
   );
 }
 
-const Container = styled.div`
+const StyledFooter = styled.div`
   display: flex;
-  max-width: 984px;
-  margin: 0 auto;
-  clear: both;
+  background: url(${GrayBackGround});
 
   p {
-    width: 375px;
-    margin-top: 7px;
+    padding: 5px 0px 0px 32px;
+    color: #535353;
   }
 
   .IconFooter {
     display: flex;
+    padding: 16px 8px;
     .Email {
       background: url(${DesignElements}) no-repeat -191px -430px;
       &:hover {
@@ -97,17 +97,15 @@ const Container = styled.div`
       border-radius: 50%;
     }
   }
-`;
-
-const Footer = styled.div`
-  display: flex;
-  justify-content: center;
-  height: 60px;
-  align-items: center;
-
+  @media (max-width: 980px) {
+    justify-content: center;
+  }
   @media (max-width: 540px) {
     p {
       display: none;
+    }
+    .IconFooter {
+      margin: 0 auto;
     }
   }
 `;

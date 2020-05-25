@@ -1,14 +1,32 @@
-import BgContact from "../images/contactbg.jpg";
-import DesignElements from "../images/design-elements.png";
-import ImgContact from "../images/contact.png";
-import React from "react";
-import Skills from "../images/skills.png";
 import { Tooltip } from "@material-ui/core";
+import React from "react";
 import styled from "styled-components";
 
-export function RenderContact() {
+import CircleButton from "./circle-button";
+
+import BgContact from "./images/contactbg.jpg";
+import DesignElements from "./images/design-elements.png";
+import ImgContact from "./images/contact.png";
+import Skills from "./images/skills.png";
+
+const StyledCircleButton = styled(CircleButton)`
+  left: 410px;
+  bottom: 10px;
+  font-size: 25px;
+  em {
+    font-size: 30px;
+  }
+  @media (max-width: 860px) {
+    left: 404px;
+  }
+  @media (max-width: 540px) {
+    left: 40%;
+  }
+`;
+
+export function Contact() {
   return (
-    <Contact>
+    <StyledContact>
       <Container>
         <form>
           <input type="text" name="Name" id="Name" placeholder="Name" />
@@ -37,18 +55,17 @@ export function RenderContact() {
             <img src={Skills} width="225" height="75" alt="Skill.img" />
           </Tooltip>
         </div>
-        <a href="#/" className="ImgSendMessage">
-          <em>Send</em>Message
-        </a>
+        <StyledCircleButton href="#">
+          <em>Send</em> Message
+        </StyledCircleButton>
       </Container>
-    </Contact>
+    </StyledContact>
   );
 }
 
 const Container = styled.div`
   max-width: 984px;
   margin: 0 auto;
-  clear: both;
   display: flex;
   position: relative;
 
@@ -84,40 +101,6 @@ const Container = styled.div`
     }
   }
 
-  .ImgSendMessage {
-    font-family: Craftsmans, Arial, sans-serif;
-    left: 380px;
-    bottom: 10px;
-    font-size: 25px;
-    width: 100px;
-    height: 77px;
-    font-weight: 300;
-    display: block;
-    position: absolute;
-    color: #fff;
-    text-transform: uppercase;
-    background: url(${DesignElements}) no-repeat 0px -310px;
-    border: 0px;
-    transition: transform 1s;
-    overflow: hidden;
-    transform: rotate(0deg);
-    line-height: 28px;
-    padding: 24px 0 0 0;
-    text-align: center;
-
-    &:hover {
-      transform: rotate(15deg);
-    }
-
-    em {
-      font-size: 30px;
-      letter-spacing: 5px;
-      clear: both;
-      display: block;
-      padding-left: 5px;
-    }
-  }
-
   .SkillsImg {
     width: 200px;
     position: absolute;
@@ -125,29 +108,26 @@ const Container = styled.div`
   }
 
   .ContactImg {
-    top: 0px;
+    top: -30px;
     right: 40px;
     position: absolute;
   }
 `;
 
-const Contact = styled.section`
+const StyledContact = styled.section`
   background: url(${BgContact}) repeat-x left top;
-  overflow: hidden;
-  padding: 60px 0 0 0;
-  height: 420px;
+  padding: 77px 0 30px;
 
   @media (max-width: 980px) {
     ${Container} {
       width: 768px;
-
       .SkillsImg {
         display: none;
       }
 
       .ContactImg {
         top: -20px !important;
-        right: 30px !important;
+        right: 8px !important;
         width: 300px;
         height: 260px;
       }
@@ -156,20 +136,17 @@ const Contact = styled.section`
 
   @media (max-width: 860px) {
     ${Container} {
-      width: 580px;
+      width: 526px;
       justify-content: center;
 
       .ContactImg {
         display: none;
       }
-
-      .ImgSendMessage {
-        left: 444px;
-      }
     }
   }
 
   @media (max-width: 540px) {
+    padding: 80px 0 30px;
     ${Container} {
       width: 100%;
 
@@ -186,10 +163,6 @@ const Contact = styled.section`
         textarea {
           width: 300px;
         }
-      }
-
-      .ImgSendMessage {
-        left: 0px;
       }
     }
   }

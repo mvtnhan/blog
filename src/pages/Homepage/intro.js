@@ -1,71 +1,103 @@
-import DesignElements from "../images/design-elements.png";
-import { Image } from "semantic-ui-react";
-import ImgIntro from "../images/intro.png";
-import IntroBanner from "../images/intro-central-banner.png";
-import IntroSmall from "../images/intro-small.png";
-import React from "react";
-import { Social } from "./Social.js";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-export function RenderIntro() {
+import { Social } from './url.js';
+
+import GrayBackGround from './images/section-bg-gray.jpg';
+import DesignElements from './images/design-elements.png';
+import ImgIntro from './images/intro.png';
+import IntroBanner from './images/intro-central-banner.png';
+import IntroSmall from './images/intro-small.png';
+import Logo from './images/Logo.png';
+import Rope from './images/logo-rope.png';
+
+function renderFindOutMore() {
   return (
-    <Intro>
-      <ImgScraftsman>
+    <>
+      <div className="FindOutMoreBorder" />
+      <div className="FindOutMore">
+        <div href="#/" className="FindOutMoreTrigger">
+          Find Out <span>More</span>
+        </div>
+        <a className="MyWorks" href="#/">
+          My Works
+        </a>
+        <a className="AboutMe" href="#/">
+          About Me
+        </a>
+        <a className="ContactInfo" href="#/">
+          Contact Info
+        </a>
+      </div>
+    </>
+  );
+}
+
+export function Intro() {
+  return (
+    <StyledIntro>
+      <Banner>
+        <h1>
+          <img src={Logo} alt="My banner" />
+        </h1>
+      </Banner>
+      <div className="Scraftsman">
         <a className="Linkedin" href={Social.linkedin}>
           Linkedin
         </a>
         <a className="Twitter" href={Social.twitter}>
           Twitter
         </a>
-        <AroundFindOutMore />
-        <div className="FindOutMore">
-          <Image href="#/" className="ImgFindOutMore">
-            Find Out <span>More</span>
-          </Image>
-          <a className=" MyWorks" href="#/">
-            My Works
-          </a>
-          <a className="AboutMe" href="#/">
-            About Me
-          </a>
-          <a className="ContactInfo" href="#/">
-            Contact Info
-          </a>
-        </div>
-      </ImgScraftsman>
+        {renderFindOutMore()}
+      </div>
       <h2>Hi, I'm Nhan. I'm a fresher on my way to be a frontend engineer</h2>
-    </Intro>
+    </StyledIntro>
   );
 }
 
-const ImgScraftsman = styled.div`
+const Banner = styled.div`
+  height: 125px;
+  padding: 20px;
+  max-width: 984px;
   margin: 0 auto;
-  background: url(${ImgIntro}) no-repeat center 20px;
-  height: 420px;
-  width: 673px;
-  position: relative;
+
+  h1 {
+    width: 565px;
+    background: url(${Rope}) no-repeat center top;
+    padding: 38px;
+    position: absolute;
+
+    img {
+      padding: 0;
+      margin: 0;
+      transition: transform 1s;
+      &:hover {
+        transform: rotate(1.9deg);
+      }
+    }
+  }
+
+  @media (max-width: 980px) {
+    width: 768px;
+  }
+
+  @media (max-width: 860px) {
+    display: none;
+    width: 580px;
+  }
 `;
 
-const AroundFindOutMore = styled.div`
-  position: absolute;
-  width: 190px;
-  height: 190px;
-  background: url(${DesignElements}) no-repeat 0px -430px;
-  left: 518px;
-  bottom: 320px;
-  transition-property: transform;
-  transition-duration: 1s;
-  animation-name: rotate;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-`;
+const StyledIntro = styled.section`
+  padding-bottom: 100px;
+  background: url(${GrayBackGround});
 
-const Intro = styled.section`
-  padding: 20px 0;
-  font-family: Craftsmans, Arial, sans-serif;
+  .Scraftsman {
+    margin: 0 auto;
+    background: url(${ImgIntro}) no-repeat center 20px;
+    height: 420px;
+    width: 673px;
+    position: relative;
 
-  ${ImgScraftsman} {
     .Linkedin:link {
       width: 108px;
       height: 33px;
@@ -81,7 +113,21 @@ const Intro = styled.section`
       left: 38px;
       top: 182px;
     }
-    ${AroundFindOutMore} {
+
+    .FindOutMoreBorder {
+      position: absolute;
+      left: 518px;
+      bottom: 320px;
+      width: 190px;
+      height: 190px;
+      background: url(${DesignElements}) no-repeat 0px -430px;
+      transition-property: transform;
+      transition-duration: 1s;
+      animation-name: rotate;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
       @keyframes rotate {
         from {
           transform: rotate(0deg);
@@ -94,11 +140,11 @@ const Intro = styled.section`
     }
 
     .FindOutMore {
+      position: relative;
       width: 136px;
       left: 543px;
       bottom: 62px;
       text-align: center;
-      position: relative;
 
       span {
         top: 60px;
@@ -138,7 +184,7 @@ const Intro = styled.section`
       }
     }
 
-    .ImgFindOutMore {
+    .FindOutMoreTrigger {
       width: 136px;
       height: 107px;
       position: relative;
@@ -187,9 +233,10 @@ const Intro = styled.section`
     background: url(${IntroBanner}) no-repeat center top;
     font-weight: 400;
     color: #ffffff;
-    font-size: 31.5px;
-    padding: 20px 0 34px 0;
+    font-size: 35px;
+    padding: 16px 0 23px 0;
     margin: 35px 0 0 0;
+    text-shadow: #4f1d15 -1px -1px 1px;
   }
 
   @media (max-width: 980px) {
@@ -202,12 +249,12 @@ const Intro = styled.section`
   }
 
   @media (max-width: 860px) {
-    ${ImgScraftsman} {
+    .Scraftsman {
       background: url(${IntroSmall}) no-repeat center 20px;
       height: 320px;
       width: 290px;
 
-      ${AroundFindOutMore} {
+      .FindOutMoreBorder {
         top: 155px;
         left: 12px;
       }
