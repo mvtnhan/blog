@@ -33,20 +33,18 @@ export function About() {
           <article>
             <h2>My Greetings & Handshake to You</h2>
             <p>
-              Welcome to my little place on the internet. I’m Marijan, Web
-              Designer and UX professional working with{" "}
-              <a href="#/">Booking.com</a> on world's #1 accomodation site.
+              Welcome to my little place on the internet. I’m mvtnhan, Fresher
+              frontend engineer working with javaScript and ReactJs
             </p>
             <p>
-              Working within role of Web and UX Designer since 2006. On each
-              project I bring a diversified set of skills which have been
-              gathered from projects of all sizes, versatile design styles and
-              different markets.
+              Working within role of Developer Frontend. On each project I bring
+              a diversified set of skills which have been gathered from projects
+              of all sizes, versatile design styles and different markets.
             </p>
             <p>
               I’m specialized in web design and development using handwritten
-              HTML, CSS and jQuery framework. Love working with WordPress, also
-              have considerable experience with other platforms as well.
+              HTML, CSS and ES6. Love working with ReatJs, also have
+              considerable experience with Android platforms.
             </p>
           </article>
         </div>
@@ -61,7 +59,8 @@ export function About() {
               approach which means that client & customer (if it's possible) is
               constantly involved in project creation. So if you are ready to
               dig in with me and produce some great stuff which will not only
-              look great but also achieve its goals.
+              look great but also achieve its goals. go get things rolling and-
+              <a href="https://mvtnhan@gmail.com/">contact me</a>.
             </p>
           </article>
           <div className="GreatUX">
@@ -69,10 +68,10 @@ export function About() {
               Defined<span>Purpose</span>
             </a>
             <a href="#/">
-              Defined<span>Purpose</span>
+              Unique<span>Purpose</span>
             </a>
             <a href="#/">
-              Defined<span>Purpose</span>
+              Quality<span>Purpose</span>
             </a>
             <strong>Efficient Web Presence</strong>
             <p className="Conclusion">GreatUX/UI</p>
