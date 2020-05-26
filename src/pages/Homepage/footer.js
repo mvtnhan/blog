@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Tooltip from "@material-ui/core/Tooltip";
 
-import { Social } from "./url.js";
+import { Social } from "../../constants.js";
 
 import DesignElements from "./images/design-elements.png";
 import GrayBackGround from "./images/section-bg-gray.jpg";

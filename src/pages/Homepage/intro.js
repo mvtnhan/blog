@@ -1,15 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { Social } from './url.js';
+import { Social } from "../../constants.js";
 
-import GrayBackGround from './images/section-bg-gray.jpg';
-import DesignElements from './images/design-elements.png';
-import ImgIntro from './images/intro.png';
-import IntroBanner from './images/intro-central-banner.png';
-import IntroSmall from './images/intro-small.png';
-import Logo from './images/Logo.png';
-import Rope from './images/logo-rope.png';
+import GrayBackGround from "./images/section-bg-gray.jpg";
+import DesignElements from "./images/design-elements.png";
+import ImgIntro from "./images/intro.png";
+import IntroBanner from "./images/intro-central-banner.png";
+import IntroSmall from "./images/intro-small.png";
+import Logo from "./images/Logo.png";
+import Rope from "./images/logo-rope.png";
 
 function renderFindOutMore() {
   return (
@@ -88,6 +88,7 @@ const Banner = styled.div`
 `;
 
 const StyledIntro = styled.section`
+  padding-top: 24px;
   padding-bottom: 100px;
   background: url(${GrayBackGround});
 
@@ -249,6 +250,7 @@ const StyledIntro = styled.section`
   }
 
   @media (max-width: 860px) {
+    padding-top: 32px;
     .Scraftsman {
       background: url(${IntroSmall}) no-repeat center 20px;
       height: 320px;

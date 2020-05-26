@@ -4,14 +4,14 @@ import styled from "styled-components";
 import CircleButton from "./circle-button";
 
 import BgWorks from "./images/worksbg.jpg";
-import ImgCloudVPS from "./images/cloudvps.png";
+import ImgRealtimeChatty from "./images/chatty.png";
 import SpriteImage from "./images/design-elements.png";
 import ImgFFVentureCapital from "./images/ff-venture-capital.png";
 import ImgHost365 from "./images/host365.png";
 import ImgManDrawing from "./images/man-drawing.png";
-import ImgLestHost from "./images/lets-host.png";
 import ImgMedievalWall from "./images/medieval-wall.png";
 import ImgRavenDB from "./images/ravendb.png";
+import ImgTodo from "./images/todo.png";
 
 const StyledCircleButton = styled(CircleButton)`
   @media (max-width: 780px) {
@@ -29,8 +29,11 @@ export function MoreWorks() {
   return (
     <StyledMoreWorks>
       <Container>
-        <a href="#/" className="Project LeftTop">
-          <img src={ImgLestHost} alt="LesHost" />
+        <a
+          href="https://mvtnhan.github.io/todoapp/"
+          className="Project LeftTop"
+        >
+          <img src={ImgTodo} alt="Todo" />
         </a>
         <a href="#/" className="Project LeftMid">
           <img src={ImgFFVentureCapital} alt="ff VentureCapital" />
@@ -38,8 +41,11 @@ export function MoreWorks() {
         <a href="#/" className="Project LeftBot">
           <img src={ImgRavenDB} alt="RavenDB" />
         </a>
-        <a href="#/" className="Project RightTop">
-          <img src={ImgCloudVPS} alt="CloudVPS" />
+        <a
+          href="https://mvtnhan.github.io/realtime-chat-app/"
+          className="Project RightTop"
+        >
+          <img src={ImgRealtimeChatty} alt="RealtimeChatty" />
         </a>
         <a href="#/" className="Project RightMid">
           <img src={ImgHost365} alt="Host365" />
