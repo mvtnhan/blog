@@ -24,7 +24,7 @@ class TopNavBar extends React.Component {
       this.setState({
         menuOnTop: window.scrollY === 0,
       });
-    }, 100);
+    }, 50);
   };
 
   render() {
@@ -51,13 +51,14 @@ const MenuBar = styled.div`
   background-color: ${(props) => (props.isOnTop ? "transparent" : "white")};
   box-shadow: ${(props) =>
     props.isOnTop ? "none" : "rgba(0, 0, 0, 0.15) 0px 1px 4px 0px"};
-  transition: background-color 250ms ease-in-out 0s,
+  transition: background-color 50ms ease-in-out 0s,
     box-shadow 250ms ease-in-out 0s;
 
   .menuTopBar {
     overflow: hidden;
     display: flex;
     width: 100%;
+    margin-left: -8px;
   }
 
   .menuTopBar a {

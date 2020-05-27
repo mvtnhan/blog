@@ -86,7 +86,7 @@ export function About() {
 const StyledAbout = styled.section`
   background: url(${GrayBackGround});
   overflow: hidden;
-  padding: 80px 16px;
+  padding: 80px 0;
 
   article {
     h2,
