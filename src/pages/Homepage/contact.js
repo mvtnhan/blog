@@ -13,12 +13,15 @@ const StyledCircleButton = styled(CircleButton)`
   left: 410px;
   bottom: 10px;
   font-size: 25px;
+
   em {
     font-size: 30px;
   }
+
   @media (max-width: 860px) {
     left: 404px;
   }
+
   @media (max-width: 540px) {
     left: 40%;
   }
@@ -121,6 +124,7 @@ const StyledContact = styled.section`
   @media (max-width: 980px) {
     ${Container} {
       width: 768px;
+
       .SkillsImg {
         display: none;
       }
@@ -147,6 +151,7 @@ const StyledContact = styled.section`
 
   @media (max-width: 540px) {
     padding: 80px 0 30px;
+
     ${Container} {
       width: 100%;
 

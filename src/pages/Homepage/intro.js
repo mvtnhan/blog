@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 import { Social } from "../../constants.js";
 
-import GrayBackGround from "./images/section-bg-gray.jpg";
 import DesignElements from "./images/design-elements.png";
+import GrayBackGround from "./images/section-bg-gray.jpg";
 import ImgIntro from "./images/intro.png";
 import IntroBanner from "./images/intro-central-banner.png";
 import IntroSmall from "./images/intro-small.png";
@@ -251,6 +251,7 @@ const StyledIntro = styled.section`
 
   @media (max-width: 860px) {
     padding-top: 32px;
+
     .Scraftsman {
       background: url(${IntroSmall}) no-repeat center 20px;
       height: 320px;

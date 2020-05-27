@@ -58,8 +58,10 @@ const StyledFooter = styled.div`
   .IconFooter {
     display: flex;
     padding: 16px 8px;
+
     .Email {
       background: url(${DesignElements}) no-repeat -191px -430px;
+
       &:hover {
         background: url(${DesignElements}) no-repeat -191px -462px;
       }
@@ -67,6 +69,7 @@ const StyledFooter = styled.div`
 
     .Skype {
       background: url(${DesignElements}) no-repeat -223px -430px;
+
       &:hover {
         background: url(${DesignElements}) no-repeat -223px -462px;
       }
@@ -74,6 +77,7 @@ const StyledFooter = styled.div`
 
     .Twitter {
       background: url(${DesignElements}) no-repeat -255px -430px;
+
       &:hover {
         background: url(${DesignElements}) no-repeat -255px -462px;
       }
@@ -81,6 +85,7 @@ const StyledFooter = styled.div`
 
     .Linkedin {
       background: url(${DesignElements}) no-repeat -287px -430px;
+
       &:hover {
         background: url(${DesignElements}) no-repeat -287px -462px;
       }
@@ -97,13 +102,16 @@ const StyledFooter = styled.div`
       border-radius: 50%;
     }
   }
+
   @media (max-width: 980px) {
     justify-content: center;
   }
+
   @media (max-width: 540px) {
     p {
       display: none;
     }
+
     .IconFooter {
       margin: 0 auto;
     }

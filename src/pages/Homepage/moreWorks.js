@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Container } from "../../components/container.js";
 import CircleButton from "./circle-button";
 
 import BgWorks from "./images/worksbg.jpg";
-import ImgRealtimeChatty from "./images/chatty.png";
-import SpriteImage from "./images/design-elements.png";
 import ImgFFVentureCapital from "./images/ff-venture-capital.png";
 import ImgHost365 from "./images/host365.png";
 import ImgManDrawing from "./images/man-drawing.png";
 import ImgMedievalWall from "./images/medieval-wall.png";
 import ImgRavenDB from "./images/ravendb.png";
+import ImgRealtimeChatty from "./images/chatty.png";
 import ImgTodo from "./images/todo.png";
+import SpriteImage from "./images/design-elements.png";
 
 const StyledCircleButton = styled(CircleButton)`
   @media (max-width: 780px) {
@@ -98,13 +99,6 @@ const BlockQuote = styled.blockquote`
     right: -8px;
     bottom: 0px;
   }
-`;
-
-export const Container = styled.div`
-  max-width: 984px;
-  margin: 0 auto;
-  position: relative;
-  height: 100%;
 `;
 
 const StyledMoreWorks = styled.section`

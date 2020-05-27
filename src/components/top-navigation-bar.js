@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { Container } from "../pages/Homepage/moreWorks.js";
+import { Container } from "./container.js";
 
 class TopNavBar extends React.Component {
   state = {
@@ -65,7 +65,7 @@ const MenuBar = styled.div`
     text-align: center;
     padding: 8px 8px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     color: #895c32;
     position: relative;
   }

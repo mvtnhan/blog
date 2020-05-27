@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Container } from "../../components/container.js";
 import CircleButton from "./circle-button";
-import { Container } from "./moreWorks";
 
 import AboutWork from "./images/about-work-flow.png";
 import GrayBackGround from "./images/section-bg-gray.jpg";
@@ -12,6 +12,7 @@ const StyledCircleButton = styled(CircleButton)`
   left: 15px;
   top: 27px;
   font-size: 20px;
+
   em {
     font-size: 28px;
   }
@@ -86,6 +87,7 @@ const StyledAbout = styled.section`
   background: url(${GrayBackGround});
   overflow: hidden;
   padding: 80px 16px;
+
   article {
     h2,
     h3 {
@@ -93,6 +95,7 @@ const StyledAbout = styled.section`
       color: #9e331f;
       margin: 0;
     }
+
     h2 {
       margin-bottom: 5px;
       font-size: 46px;

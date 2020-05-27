@@ -1,6 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import SpriteImage from './images/design-elements.png';
+import React from "react";
+import styled from "styled-components";
+
+import SpriteImage from "./images/design-elements.png";
 
 export default function CircleButton(props) {
   return (
