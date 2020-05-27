@@ -34,8 +34,8 @@ export function About() {
           <article>
             <h2>My Greetings & Handshake to You</h2>
             <p>
-              Welcome to my little place on the internet. I’m mvtnhan, Fresher
-              frontend engineer working with javaScript and ReactJs
+              Welcome to my little place on the internet. I’m mvtnhan, frontend
+              engineer working with javaScript and ReactJS
             </p>
             <p>
               Working within role of Developer Frontend. On each project I bring
@@ -60,7 +60,8 @@ export function About() {
               approach which means that client & customer (if it's possible) is
               constantly involved in project creation. So if you are ready to
               dig in with me and produce some great stuff which will not only
-              look great but also achieve its goals. go get things rolling and-
+              look great but also achieve its goals. go get things rolling and
+              &nbsp;
               <a href="https://mvtnhan@gmail.com/">contact me</a>.
             </p>
           </article>
@@ -108,7 +109,7 @@ const StyledAbout = styled.section`
     p {
       font-size: 19px;
       line-height: 140%;
-      margin: 15px 0 0 0;
+      margin: 8px 0 0 0;
       color: #535353;
     }
   }

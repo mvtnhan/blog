@@ -50,7 +50,7 @@ export function Intro() {
         </a>
         {renderFindOutMore()}
       </div>
-      <h2>Hi, I'm Nhan. I'm a fresher on my way to be a frontend engineer</h2>
+      <h2>Hi, I'm Nhan. I'm on my way to be a frontend engineer</h2>
     </StyledIntro>
   );
 }
