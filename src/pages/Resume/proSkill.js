@@ -1,12 +1,13 @@
 import React from "react";
-import { SectionHeader } from "../../components/section-header.js";
 import styled from "styled-components";
+
+import { SectionHeader } from "../../components/section-header.js";
 
 export function ProSkill() {
   return (
     <Skill>
       <SectionHeader>
-        <p>PRO SKILL</p>
+        <h1>PRO SKILL</h1>
       </SectionHeader>
     </Skill>
   );
@@ -14,9 +15,4 @@ export function ProSkill() {
 
 const Skill = styled.div`
   margin-bottom: 48px;
-  ${SectionHeader} {
-    p {
-      color: white;
-    }
-  }
 `;

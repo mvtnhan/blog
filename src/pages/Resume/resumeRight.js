@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+
 import { AboutMe } from "./aboutMe.js";
 import { WorkExperience } from "./workExperience.js";
 
@@ -23,7 +24,24 @@ const Right = styled.div`
   flex-direction: column;
 
   .name {
-    height: 20%;
-    margin: 48px 0;
+    flex-direction: column;
+    height: 16%;
+    margin: 40px 0;
+    justify-content: center;
+    display: flex;
+
+    h1,
+    p {
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 20px;
+    }
   }
 `;

@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { ContactMe } from "./contactMe.js";
+
 import { Avatar } from "./avatar.js";
+import { ContactMe } from "./contactMe.js";
 import { Education } from "./education.js";
 import { ProSkill } from "./proSkill.js";
 

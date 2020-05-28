@@ -2,59 +2,58 @@ import React from "react";
 import styled from "styled-components";
 
 import { SectionHeader } from "../../components/section-header.js";
+import { Work } from "../../components/work.js";
 
 export function WorkExperience() {
   return (
     <WorkExp>
       <SectionHeader>
-        <p>Work Experince</p>
+        <h1>WORK EXPERIENCE</h1>
       </SectionHeader>
-      <div className="BoxWork">
-        <h1>REALTIME CHAT APP</h1>
-        <p>Company / Institute Name</p>
-        <LocationYear>
+      <Work>
+        <h1 className="titleProject">REALTIME CHAT APP</h1>
+        <p className="company">Company / Institute Name</p>
+        <div className="locationYear">
           <span>Washington DC, United States of America</span>
           <p>2020</p>
-        </LocationYear>
+        </div>
         <span>
           An application called Chatty. It will allow only authenticated users
           to send and read messages and users can sign up by providing their
           email and creating a password, or by authenticating through a Google
           or GitHub account.
         </span>
-      </div>
+      </Work>
       <hr />
+      <Work>
+        <h1 className="titleProject">REALTIME CHAT APP</h1>
+        <p className="company">Company / Institute Name</p>
+        <div className="locationYear">
+          <span>Washington DC, United States of America</span>
+          <p>2020</p>
+        </div>
+        <span>
+          An application called Chatty. It will allow only authenticated users
+          to send and read messages and users can sign up by providing their
+          email and creating a password, or by authenticating through a Google
+          or GitHub account.
+        </span>
+      </Work>
     </WorkExp>
   );
 }
 
-const LocationYear = styled.div`
-  display: flex;
-  span {
-    object-fit: contain;
-    align-self: flex-start;
-  }
-  p {
-    margin: 0 56px 0 auto;
-  }
-`;
-
 const WorkExp = styled.div`
-  margin-bottom: 48px;
+  margin-bottom: 40px;
+
   ${SectionHeader} {
     margin-right: 0;
-
-    p {
-      color: white;
-    }
   }
-
   hr {
-    width: 56px;
-    height: 2px;
+    margin: 24px auto 24px 0;
+    height: 1px;
     border-width: 0;
+    width: 56px;
     background-color: #616161;
-    display: flex;
-    margin: 24px 0;
   }
 `;

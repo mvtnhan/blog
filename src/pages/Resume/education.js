@@ -1,12 +1,13 @@
 import React from "react";
-import { SectionHeader } from "../../components/section-header.js";
 import styled from "styled-components";
+
+import { SectionHeader } from "../../components/section-header.js";
 
 export function Education() {
   return (
     <Edu>
       <SectionHeader>
-        <p>EDUCATION</p>
+        <h1>EDUCATION</h1>
       </SectionHeader>
       <div className="BoxEdu">
         <span>2020</span>
@@ -19,31 +20,27 @@ export function Education() {
 }
 
 const Edu = styled.div`
-  margin-bottom: 48px;
-  ${SectionHeader} {
-    p {
-      color: white;
-    }
-  }
+  margin-bottom: 40px;
 
   .BoxEdu {
     display: flex;
-    padding: 16px 48px;
+    padding: 16px 24px;
     flex-direction: column;
 
     span {
-      font-size: 20px;
+      font-size: 16px;
       color: #52515b;
     }
+
     h1 {
       margin: 0;
-      font-size: 26px;
+      font-size: 18px;
       color: #1e1c27;
     }
   }
 
   hr {
-    margin: auto 56px auto 48px;
+    margin: auto 56px auto 24px;
     height: 2px;
     border-width: 0;
     background-color: #616161;

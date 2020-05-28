@@ -1,8 +1,8 @@
 import React from "react";
+import styled from "styled-components";
 
 import { ResumeLeft } from "./resumeLeft.js";
 import { ResumeRight } from "./resumeRight.js";
-import styled from "styled-components";
 
 export default function Resume() {
   return (
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const Paper = styled.div`
-  background-color: #f0f0f0;
+  background-color: #ececec;
   margin: 48px 0;
   display: flex;
   width: 8.3in;

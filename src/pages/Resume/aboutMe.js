@@ -7,7 +7,7 @@ export function AboutMe() {
   return (
     <About>
       <SectionHeader>
-        <p>ABOUT ME</p>
+        <h1>ABOUT ME</h1>
       </SectionHeader>
       <p className="textAboutMe">
         As you already know my name is Nhan, I come from Quang Ngai, Because I
@@ -25,15 +25,16 @@ export function AboutMe() {
 }
 
 const About = styled.div`
-  margin-bottom: 48px;
+  margin-bottom: 40px;
+
   ${SectionHeader} {
     margin-right: 0;
-    p {
-      color: white;
-    }
   }
+
   .textAboutMe {
-    margin: 8px auto;
-    color: #57565b;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 10px auto 0;
+    color: #1e1c27;
   }
 `;
