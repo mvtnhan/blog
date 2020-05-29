@@ -3,3 +3,8 @@ body {
   font-weight: 400;
   margin: 0;
 }
+
+body,
+body > div {
+  height: 100%;
+}

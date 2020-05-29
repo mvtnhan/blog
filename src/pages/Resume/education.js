@@ -1,26 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
-import { SectionHeader } from "../../components/section-header.js";
+import BlockHeader from "./block-header";
 
 export function Education() {
   return (
-    <Edu>
-      <SectionHeader>
-        <h1>EDUCATION</h1>
-      </SectionHeader>
+    <StyledEducation>
+      <BlockHeader title="Education" />
       <div className="BoxEdu">
-        <span>2020</span>
+        <span>2015-2020</span>
         <h1>SOFTWARE ENGINEER</h1>
         <span>GIA DINH UNIVESITY</span>
       </div>
       <hr />
-    </Edu>
+    </StyledEducation>
   );
 }
 
-const Edu = styled.div`
-  margin-bottom: 40px;
+const StyledEducation = styled.div`
+  margin-bottom: 32px;
 
   .BoxEdu {
     display: flex;
