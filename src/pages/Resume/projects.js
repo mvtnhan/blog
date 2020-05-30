@@ -3,13 +3,13 @@ import styled from "styled-components";
 
 import BlockHeader from "./block-header";
 
-import BlockWork from "./block-work.js";
+import BlockProjects from "./block-projects.js";
 
-export function WorkExperience() {
+export function Projects() {
   return (
-    <WorkExp>
+    <StyledProjects>
       <BlockHeader title="Projects" />
-      <BlockWork
+      <BlockProjects
         projectname="Realtime chat app"
         // company="Company / Institute Name"
         // location="Washington DC, United States of America"
@@ -19,7 +19,7 @@ export function WorkExperience() {
           email and creating a password, or by authenticating through a Google
           or GitHub account."
       />
-      <BlockWork
+      <BlockProjects
         projectname="Todo app"
         // company="Company / Institute Name"
         // location="Washington DC, United States of America"
@@ -29,10 +29,10 @@ export function WorkExperience() {
           email and creating a password, or by authenticating through a Google
           or GitHub account."
       />
-    </WorkExp>
+    </StyledProjects>
   );
 }
 
-const WorkExp = styled.div`
-  margin-bottom: 40px;
+const StyledProjects = styled.div`
+  margin-bottom: 24px;
 `;

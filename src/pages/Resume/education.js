@@ -8,11 +8,11 @@ export function Education() {
     <StyledEducation>
       <BlockHeader title="Education" />
       <div className="BoxEdu">
-        <span>2015-2020</span>
-        <h1>SOFTWARE ENGINEER</h1>
-        <span>GIA DINH UNIVESITY</span>
+        <h1>
+          GIA DINH UNIVESITY <span>(2015-2020)</span>
+        </h1>
+        <span>SOFTWARE ENGINEER</span>
       </div>
-      <hr />
     </StyledEducation>
   );
 }
@@ -22,11 +22,11 @@ const StyledEducation = styled.div`
 
   .BoxEdu {
     display: flex;
-    padding: 16px 24px;
+    padding: 16px 24px 0;
     flex-direction: column;
+    line-height: 24px;
 
     span {
-      font-size: 16px;
       color: #52515b;
     }
 
@@ -35,12 +35,5 @@ const StyledEducation = styled.div`
       font-size: 18px;
       color: #1e1c27;
     }
-  }
-
-  hr {
-    margin: auto 56px auto 24px;
-    height: 2px;
-    border-width: 0;
-    background-color: #616161;
   }
 `;

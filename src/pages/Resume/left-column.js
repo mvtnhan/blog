@@ -4,7 +4,7 @@ import { Avatar } from "./avatar.js";
 import { ContactMe } from "./contact-me.js";
 import { Education } from "./education.js";
 import imgLeftBg from "./images/left-bg.png";
-import { ProSkill } from "./pro-skill.js";
+import { Interest } from "./interest.js";
 
 export function LeftColumn() {
   return (
@@ -13,7 +13,7 @@ export function LeftColumn() {
       <div className="BlockWrapper">
         <ContactMe />
         <Education />
-        <ProSkill />
+        <Interest />
       </div>
     </StyledLeftColumn>
   );

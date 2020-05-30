@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 import { AboutMe } from "./about-me.js";
-import { WorkExperience } from "./work-experience.js";
+import { Skills } from "./skills.js";
+
+import { Projects } from "./projects.js";
 
 export function RightColumn() {
   return (
@@ -15,7 +17,8 @@ export function RightColumn() {
         </div>
       </div>
       <AboutMe />
-      <WorkExperience />
+      <Projects />
+      <Skills />
     </StyledRightColumn>
   );
 }
@@ -52,13 +55,10 @@ const StyledRightColumn = styled.div`
 
       p {
         width: 40%;
-
-        &:after {
-          height: 16px;
-          display: block;
-          content: "";
-          background-color: #405361;
-        }
+        height: 16px;
+        display: block;
+        content: "";
+        background-color: #405361;
       }
     }
   }

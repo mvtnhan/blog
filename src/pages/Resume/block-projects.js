@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-export default function BlockWork(props) {
+export default function BlockProjects(props) {
   return (
-    <StyledBlockWork>
+    <StyledBlockProkect>
       <h1>{props.projectname}</h1>
       <p>{props.company}</p>
       <div>
@@ -12,11 +12,11 @@ export default function BlockWork(props) {
         <p>{props.year}</p>
       </div>
       <span>{props.description}</span>
-    </StyledBlockWork>
+    </StyledBlockProkect>
   );
 }
 
-BlockWork.propTypes = {
+BlockProjects.propTypes = {
   projectname: PropTypes.string.isRequired,
   //company: PropTypes.string.isRequired,
   // location: PropTypes.string.isRequired,
@@ -24,7 +24,7 @@ BlockWork.propTypes = {
   description: PropTypes.string.isRequired,
 };
 
-const StyledBlockWork = styled.div`
+const StyledBlockProkect = styled.div`
   &:before {
     content: "";
     display: block;
