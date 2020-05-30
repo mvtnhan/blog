@@ -5,7 +5,7 @@ import { Container } from "../../components/container.js";
 import CircleButton from "./circle-button";
 
 import BgWorks from "./images/worksbg.jpg";
-import ImgFFVentureCapital from "./images/ff-venture-capital.png";
+import ImgResume from "./images/resume.png";
 import ImgHost365 from "./images/host365.png";
 import ImgManDrawing from "./images/man-drawing.png";
 import ImgMedievalWall from "./images/medieval-wall.png";
@@ -36,8 +36,8 @@ export function MoreWorks() {
         >
           <img src={ImgTodo} alt="Todo" />
         </a>
-        <a href="#/" className="Project LeftMid">
-          <img src={ImgFFVentureCapital} alt="ff VentureCapital" />
+        <a href="/resume" className="Project LeftMid">
+          <img src={ImgResume} alt="Resume" />
         </a>
         <a href="#/" className="Project LeftBot">
           <img src={ImgRavenDB} alt="RavenDB" />
