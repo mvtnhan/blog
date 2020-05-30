@@ -2,31 +2,33 @@ import React from "react";
 import styled from "styled-components";
 
 import BlockHeader from "./block-header";
-import CircularProgressBar from "./circular-progress-bar.js";
+import CircularProgressBar from "../../components/circular-progress-bar.js";
 
 export function Skills() {
   return (
-    <StyledSkills>
+    <div>
       <BlockHeader title="Skills" />
       <ListSkills>
-        <CircularProgressBar percentEnd={70} duration={1.5}>
+        <StyledCircularProgressBar percentEnd={70} duration={2}>
           CSS
-        </CircularProgressBar>
-        <CircularProgressBar percentEnd={40} duration={1.8}>
+        </StyledCircularProgressBar>
+        <StyledCircularProgressBar percentEnd={40} duration={1.3}>
           JS
-        </CircularProgressBar>
-        <CircularProgressBar percentEnd={50} duration={1.9}>
+        </StyledCircularProgressBar>
+        <StyledCircularProgressBar percentEnd={50} duration={1.5}>
           GIT
-        </CircularProgressBar>
-        <CircularProgressBar percentEnd={40} duration={1.8}>
+        </StyledCircularProgressBar>
+        <StyledCircularProgressBar percentEnd={40} duration={1.3}>
           REACT
-        </CircularProgressBar>
+        </StyledCircularProgressBar>
       </ListSkills>
-    </StyledSkills>
+    </div>
   );
 }
 
-const StyledSkills = styled.div``;
+const StyledCircularProgressBar = styled(CircularProgressBar)`
+  width: 88px;
+`;
 
 const ListSkills = styled.div`
   justify-content: space-between;

@@ -1,7 +1,7 @@
-import React from "react";
 import { Animate } from "react-move";
+import React from "react";
 
-class AnimatedSkills extends React.Component {
+class AnimatedCircularProgressBar extends React.Component {
   interval = undefined;
 
   state = {
@@ -52,4 +52,4 @@ class AnimatedSkills extends React.Component {
   }
 }
 
-export default AnimatedSkills;
+export default AnimatedCircularProgressBar;

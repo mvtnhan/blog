@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+
 import { Avatar } from "./avatar.js";
 import { ContactMe } from "./contact-me.js";
 import { Education } from "./education.js";
-import imgLeftBg from "./images/left-bg.png";
 import { Interest } from "./interest.js";
+
+import imgLeftBg from "./images/left-bg.png";
 
 export function LeftColumn() {
   return (

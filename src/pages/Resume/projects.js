@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import BlockHeader from "./block-header";
-
 import BlockProjects from "./block-projects.js";
 
 export function Projects() {

@@ -1,8 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import imgMainBg from './images/main-bg.png';
-import { LeftColumn } from './left-column.js';
-import { RightColumn } from './right-column.js';
+import React from "react";
+import styled from "styled-components";
+
+import { LeftColumn } from "./left-column.js";
+import { RightColumn } from "./right-column.js";
+
+import imgMainBg from "./images/main-bg.png";
 
 export default function Resume() {
   return (

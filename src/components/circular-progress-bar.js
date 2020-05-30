@@ -6,17 +6,16 @@ import styled from "styled-components";
 
 import "react-circular-progressbar/dist/styles.css";
 
-import AnimatedSkills from "./animated-skills.js";
+import AnimatedCircularProgressBar from "./animated-circular-progress-bar.js";
 
 export default function CircularProgressBar(props) {
   return (
-    <StyledBlockSkills>
-      <AnimatedSkills
+    <StyledCircularProgressBar className={props.className}>
+      <AnimatedCircularProgressBar
         valueStart={props.percentStart}
         valueEnd={props.percentEnd}
         duration={props.duration}
         easingFunction={easeQuadInOut}
-        repeat
       >
         {(value) => {
           return (
@@ -27,8 +26,8 @@ export default function CircularProgressBar(props) {
             />
           );
         }}
-      </AnimatedSkills>
-    </StyledBlockSkills>
+      </AnimatedCircularProgressBar>
+    </StyledCircularProgressBar>
   );
 }
 
@@ -38,13 +37,12 @@ CircularProgressBar.defaultProps = {
 
 CircularProgressBar.propTypes = {
   children: PropTypes.string.isRequired,
+  percentStart: PropTypes.number.isRequired,
   percentEnd: PropTypes.number.isRequired,
   duration: PropTypes.number.isRequired,
 };
 
-const StyledBlockSkills = styled.div`
-  width: 88px;
-
+const StyledCircularProgressBar = styled.div`
   svg {
     overflow: unset;
   }
