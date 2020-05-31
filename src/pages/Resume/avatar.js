@@ -14,13 +14,13 @@ export function Avatar() {
 }
 
 const StyledAvatar = styled.div`
-  display: flex;
-  justify-content: center;
   margin: 40px 0;
   padding: 24px 0;
   background-color: #ececec;
+  width: 45%;
 
   .boxImg {
+    margin: auto;
     width: 150px;
     height: 150px;
 

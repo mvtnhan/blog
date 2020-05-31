@@ -5,14 +5,17 @@ import { LeftColumn } from "./left-column.js";
 import { RightColumn } from "./right-column.js";
 
 import imgMainBg from "./images/main-bg.png";
+import { Header } from "./header.js";
+import imgLeftBg from "./images/left-bg.png";
 
 export default function Resume() {
   return (
     <Wrapper>
-      <Paper>
+      <div className="page" data-size="A4">
+        <Header />
         <LeftColumn />
         <RightColumn />
-      </Paper>
+      </div>
     </Wrapper>
   );
 }
@@ -22,14 +25,12 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   height: 100%;
-`;
 
-const Paper = styled.div`
-  background-color: #ececec;
-  margin: 48px 0;
-  display: flex;
-  width: 8.3in;
-  height: 11.7in;
-  border: 8px solid white;
-  border-radius: 4px;
+  .page[data-size="A4"] {
+    /* background: url(${imgLeftBg}) repeat; */
+    display: flex;
+    /* border: 8px solid white;
+    border-radius: 4px;
+    flex-wrap: wrap; */
+  }
 `;
