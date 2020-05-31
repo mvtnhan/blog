@@ -3,11 +3,13 @@ import styled from "styled-components";
 
 import { Avatar } from "./avatar.js";
 
-export function Header() {
+export function Header(props) {
   return (
-    <StyledHeader>
-      <Avatar />
-      <div className="TitleName">
+    <StyledHeader className="Header">
+      <div className="AvatarWrapper LeftColumn">
+        <Avatar />
+      </div>
+      <div className="TitleName RightColumn">
         <h1>Mai Vuong Trong Nhan</h1>
         <div>
           <h2>Frontend Engineer</h2>
@@ -19,18 +21,28 @@ export function Header() {
 }
 
 const StyledHeader = styled.div`
-  width: fit-content;
-  height: 278px;
   display: flex;
+  height: 278px;
   width: 100%;
+  align-items: center;
+
+  .LeftColumn {
+    height: 198px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > div {
+      height: 150px;
+      width: 150px;
+    }
+  }
 
   .TitleName {
-    width: 55%;
+    height: 100%;
     justify-content: center;
     display: flex;
-    display: flex;
     flex-direction: column;
-    background-color: #ececec;
 
     > div,
     h1 {
@@ -45,6 +57,7 @@ const StyledHeader = styled.div`
 
     > div {
       display: flex;
+      align-items: center;
 
       h2 {
         letter-spacing: 3px;
@@ -53,9 +66,11 @@ const StyledHeader = styled.div`
       }
 
       p {
+        width: 138px;
         height: 16px;
         display: block;
         content: "";
+        margin-left: 8px;
         background-color: #405361;
       }
     }

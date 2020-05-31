@@ -4,8 +4,7 @@ body {
   margin: 0;
 }
 
-body,
-body > div {
+html {
   height: 100%;
 }
 
@@ -19,5 +18,8 @@ body > div {
   .page {
     margin: 0;
     box-shadow: 0;
+
+    /* fix empty page of chrome */
+    height: 99%;
   }
 }

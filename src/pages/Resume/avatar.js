@@ -1,32 +1,19 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import imgAvatar from "./images/avatar.png";
+import imgAvatar from './images/avatar.png';
 
-export function Avatar() {
+export function Avatar(props) {
   return (
-    <StyledAvatar>
-      <div className="boxImg">
-        <img src={imgAvatar} alt="img avatar" />
-      </div>
+    <StyledAvatar className={props.className}>
+      <img src={imgAvatar} alt="img avatar" />
     </StyledAvatar>
   );
 }
 
 const StyledAvatar = styled.div`
-  margin: 40px 0;
-  padding: 24px 0;
-  background-color: #ececec;
-  width: 45%;
-
-  .boxImg {
-    margin: auto;
-    width: 150px;
-    height: 150px;
-
-    img {
-      height: 100%;
-      width: 100%;
-    }
+  img {
+    height: 100%;
+    width: 100%;
   }
 `;

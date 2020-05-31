@@ -9,16 +9,16 @@ export function Skills() {
     <div>
       <BlockHeader title="Skills" />
       <ListSkills>
-        <StyledCircularProgressBar percentEnd={70} duration={2}>
+        <StyledCircularProgressBar percentEnd={70} duration={3}>
           CSS
         </StyledCircularProgressBar>
-        <StyledCircularProgressBar percentEnd={40} duration={1.3}>
+        <StyledCircularProgressBar percentEnd={40} duration={1.8}>
           JS
         </StyledCircularProgressBar>
-        <StyledCircularProgressBar percentEnd={50} duration={1.5}>
+        <StyledCircularProgressBar percentEnd={50} duration={2}>
           GIT
         </StyledCircularProgressBar>
-        <StyledCircularProgressBar percentEnd={40} duration={1.3}>
+        <StyledCircularProgressBar percentEnd={40} duration={1.8}>
           REACT
         </StyledCircularProgressBar>
       </ListSkills>
