@@ -24,13 +24,6 @@ ul {
   padding: 0;
 }
 
-@media (max-width: 800px) {
-  .page[data-size="A4"] {
-    height: 100%;
-    padding-top: 24px;
-  }
-}
-
 @media print {
   body,
   .page {
