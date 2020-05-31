@@ -8,9 +8,11 @@ import { Skills } from "./skills.js";
 export function RightColumn() {
   return (
     <StyledRightColumn className="RightColumn">
-      <AboutMe />
-      <Projects />
-      <Skills className="Skill" />
+      <div className="BlockWrapper">
+        <AboutMe />
+        <Projects />
+        <Skills className="Skill" />
+      </div>
     </StyledRightColumn>
   );
 }
