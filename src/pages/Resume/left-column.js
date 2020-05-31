@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { ContactMe } from './contact-me.js';
-import { Education } from './education.js';
-import { Interest } from './interest.js';
+import { ContactMe } from "./contact-me.js";
+import { Education } from "./education.js";
+import Interest from "./interest-block.js";
 
 export function LeftColumn() {
   return (

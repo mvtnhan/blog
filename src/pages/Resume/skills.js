@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import BlockHeader from "./block-header";
+import BlockHeader from "./block-header.js";
+
 import CircularProgressBar from "../../components/circular-progress-bar.js";
 
 export function Skills(props) {
@@ -28,10 +29,6 @@ export function Skills(props) {
 
 const StyledCircularProgressBar = styled(CircularProgressBar)`
   width: 88px;
-
-  @media (max-width: 490px) {
-    width: 72px;
-  }
 `;
 
 const ListSkills = styled.div`
