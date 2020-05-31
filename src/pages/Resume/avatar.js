@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import imgAvatar from './images/avatar.png';
+import imgAvatar from "./images/avatar.png";
 
-export function Avatar(props) {
+export function Avatar() {
   return (
-    <StyledAvatar className={props.className}>
+    <StyledAvatar>
       <img src={imgAvatar} alt="img avatar" />
     </StyledAvatar>
   );

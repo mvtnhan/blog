@@ -27,25 +27,29 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  height: 100vh;
+
+  @media (max-height: 297mm) {
+    height: auto;
+  }
 
   .page[data-size="A4"] {
     background: url(${imgLeftBg}) repeat;
     border: 8px solid white;
     border-radius: 4px;
+    margin: 24px 0;
 
     .Header {
       height: 72mm;
     }
 
     .Content {
-      height: 225mm; /*297-72*/
+      height: 224mm; /*297-72*/
     }
 
     @media print {
       border: none;
+      margin: 0;
     }
   }
 
@@ -66,23 +70,35 @@ const Wrapper = styled.div`
 
   .RightColumn {
     flex: 4;
-    padding: 0 24px;
+    .BlockWrapper {
+      padding-right: 24px;
+      margin-left: 24px;
+
+      .BlockContentRight {
+        margin-left: -24px;
+      }
+    }
   }
 
-  @media (max-width: 800px) {
+  @media screen and (max-width: 210mm) {
     background: none;
     padding: 0;
 
+    height: auto;
+
     .page[data-size="A4"] {
-      height: 100%;
-      padding-top: 24px;
+      margin: 0;
     }
 
     .RightColumn {
       padding: 0;
+      .BlockWrapper,
+      .BlockWrapper .BlockContentRight {
+        margin-left: 0;
+      }
 
       .Skill {
-        padding: 0 48px 24px;
+        padding: 24px;
       }
     }
 
@@ -94,21 +110,6 @@ const Wrapper = styled.div`
     .Header,
     .Content {
       flex-direction: column;
-      height: 100% !important;
-    }
-  }
-
-  @media (max-width: 490px) {
-    .TitleName {
-      h1 {
-        font-size: 40px;
-      }
-
-      > div {
-        p {
-          width: 0 !important;
-        }
-      }
     }
   }
 `;
