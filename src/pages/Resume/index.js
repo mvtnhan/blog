@@ -78,6 +78,14 @@ const Wrapper = styled.div`
       padding-top: 24px;
     }
 
+    .RightColumn {
+      padding: 0;
+
+      .Skill {
+        padding: 0 48px 24px;
+      }
+    }
+
     .TitleName,
     .AvatarWrapper {
       background-color: transparent;
@@ -88,9 +96,19 @@ const Wrapper = styled.div`
       flex-direction: column;
       height: 100% !important;
     }
+  }
 
-    .RightColumn {
-      padding: 0px 24px 24px 0;
+  @media (max-width: 490px) {
+    .TitleName {
+      h1 {
+        font-size: 40px;
+      }
+
+      > div {
+        p {
+          width: 0 !important;
+        }
+      }
     }
   }
 `;

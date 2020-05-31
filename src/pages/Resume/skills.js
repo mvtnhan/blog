@@ -4,21 +4,21 @@ import styled from "styled-components";
 import BlockHeader from "./block-header";
 import CircularProgressBar from "../../components/circular-progress-bar.js";
 
-export function Skills() {
+export function Skills(props) {
   return (
     <div>
       <BlockHeader title="Skills" />
-      <ListSkills>
+      <ListSkills className={props.className}>
         <StyledCircularProgressBar percentEnd={70} duration={3}>
           CSS
         </StyledCircularProgressBar>
-        <StyledCircularProgressBar percentEnd={40} duration={1.8}>
+        <StyledCircularProgressBar percentEnd={50} duration={1.8}>
           JS
         </StyledCircularProgressBar>
         <StyledCircularProgressBar percentEnd={50} duration={2}>
           GIT
         </StyledCircularProgressBar>
-        <StyledCircularProgressBar percentEnd={40} duration={1.8}>
+        <StyledCircularProgressBar percentEnd={40} duration={1.5}>
           REACT
         </StyledCircularProgressBar>
       </ListSkills>
@@ -28,6 +28,10 @@ export function Skills() {
 
 const StyledCircularProgressBar = styled(CircularProgressBar)`
   width: 88px;
+
+  @media (max-width: 490px) {
+    width: 72px;
+  }
 `;
 
 const ListSkills = styled.div`
