@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export default function BlockProjects(props) {
   return (
-    <StyledBlockProkect>
+    <StyledBlockProject className="BlockProject">
       <h1>{props.projectname}</h1>
       <p>{props.company}</p>
       <div>
@@ -12,7 +12,7 @@ export default function BlockProjects(props) {
         <p>{props.year}</p>
       </div>
       <span>{props.description}</span>
-    </StyledBlockProkect>
+    </StyledBlockProject>
   );
 }
 
@@ -24,7 +24,7 @@ BlockProjects.propTypes = {
   description: PropTypes.string.isRequired,
 };
 
-const StyledBlockProkect = styled.div`
+const StyledBlockProject = styled.div`
   &:before {
     content: "";
     display: block;

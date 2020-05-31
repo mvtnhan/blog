@@ -28,4 +28,10 @@ const About = styled.div`
     margin: 10px auto 0;
     color: #1e1c27;
   }
+
+  @media (max-width: 490px) {
+    .textAboutMe {
+      margin-left: 24px;
+    }
+  }
 `;

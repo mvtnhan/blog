@@ -28,8 +28,6 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
 
   .page[data-size="A4"] {
     background: url(${imgLeftBg}) repeat;
@@ -73,13 +71,8 @@ const Wrapper = styled.div`
     background: none;
     padding: 0;
 
-    .page[data-size="A4"] {
-      height: 100%;
-      padding-top: 24px;
-    }
-
     .RightColumn {
-      padding: 0;
+      padding: 0 24px 0 0;
 
       .Skill {
         padding: 0 48px 24px;

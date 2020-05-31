@@ -34,4 +34,10 @@ export function Projects() {
 
 const StyledProjects = styled.div`
   margin-bottom: 24px;
+
+  @media (max-width: 490px) {
+    .BlockProject {
+      margin-left: 24px;
+    }
+  }
 `;
