@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import BlockHeader from "./block-header.js";
 import BlockContent from "./block-content";
+import BlockHeader from "./block-header.js";
 
 export function ContactMe() {
   return (

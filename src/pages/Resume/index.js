@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Header } from "./header.js";
 import { LeftColumn } from "./left-column.js";
 import { RightColumn } from "./right-column.js";
 
-import imgMainBg from "./images/main-bg.png";
-import { Header } from "./header.js";
 import imgLeftBg from "./images/left-bg.png";
+import imgMainBg from "./images/main-bg.png";
 
 function PrintFpt() {
   window.print();
@@ -88,6 +88,7 @@ const Wrapper = styled.div`
 
   .RightColumn {
     flex: 4;
+
     .BlockWrapper {
       padding-right: 24px;
       margin-left: 24px;
@@ -101,8 +102,11 @@ const Wrapper = styled.div`
   @media screen and (max-width: 210mm) {
     background: none;
     padding: 0;
-
     height: auto;
+
+    .fa-print {
+      display: none;
+    }
 
     .page[data-size="A4"] {
       margin: 0;
@@ -110,6 +114,7 @@ const Wrapper = styled.div`
 
     .RightColumn {
       padding: 0;
+
       .BlockWrapper,
       .BlockWrapper .BlockContentRight {
         margin-left: 0;

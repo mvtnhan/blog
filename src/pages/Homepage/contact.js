@@ -164,6 +164,7 @@ const StyledContact = styled.section`
         padding-bottom: 50px;
         margin-top: 7px;
         align-items: center;
+
         input,
         textarea {
           width: 300px;

@@ -5,12 +5,12 @@ import { Container } from "../../components/container.js";
 import CircleButton from "./circle-button";
 
 import BgWorks from "./images/worksbg.jpg";
-import ImgResume from "./images/resume.png";
 import ImgHost365 from "./images/host365.png";
 import ImgManDrawing from "./images/man-drawing.png";
 import ImgMedievalWall from "./images/medieval-wall.png";
 import ImgRavenDB from "./images/ravendb.png";
 import ImgRealtimeChatty from "./images/chatty.png";
+import ImgResume from "./images/resume.png";
 import ImgTodo from "./images/todo.png";
 import SpriteImage from "./images/design-elements.png";
 

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import BlockHeader from "./block-header.js";
-
 import CircularProgressBar from "../../components/circular-progress-bar.js";
 
 export function Skills(props) {
