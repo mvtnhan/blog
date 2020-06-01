@@ -30,4 +30,8 @@ ul {
     margin: 0;
     box-shadow: 0;
   }
+
+  .fa-print {
+    display: none;
+  }
 }

@@ -8,9 +8,14 @@ import imgMainBg from "./images/main-bg.png";
 import { Header } from "./header.js";
 import imgLeftBg from "./images/left-bg.png";
 
+function PrintFpt() {
+  window.print();
+}
+
 export default function Resume() {
   return (
     <Wrapper>
+      <i className="fa fa-print" onClick={PrintFpt} />
       <div className="page" data-size="A4">
         <Header />
         <div className="Content">
@@ -29,6 +34,18 @@ const Wrapper = styled.div`
   align-items: center;
   height: 100vh;
   position: relative;
+
+  .fa-print {
+    position: absolute;
+    top: 8px;
+    color: #d6d6d6;
+    right: 8px;
+    font-size: 48px;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
 
   @media (max-height: 297mm) {
     height: auto;
