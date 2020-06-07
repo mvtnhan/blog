@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Tooltip from "@material-ui/core/Tooltip";
 
 import { Container } from "../../components/container.js";
 import CircleButton from "./circle-button";
@@ -30,24 +31,33 @@ export function MoreWorks() {
   return (
     <StyledMoreWorks>
       <Container>
-        <a
-          href="https://mvtnhan.github.io/todoapp/"
-          className="Project LeftTop"
-        >
-          <img src={ImgTodo} alt="Todo" />
-        </a>
-        <a href="/resume" className="Project LeftMid">
-          <img src={ImgResume} alt="Resume" />
-        </a>
+        <Tooltip title="Todo Application" placement="top">
+          <a
+            href="https://mvtnhan.github.io/todoapp/"
+            className="Project LeftTop"
+          >
+            <img src={ImgTodo} alt="Todo" />
+          </a>
+        </Tooltip>
+
+        <Tooltip title="Resume" placement="top">
+          <a href="/resume" className="Project LeftMid">
+            <img src={ImgResume} alt="Resume" />
+          </a>
+        </Tooltip>
+
         <a href="#/" className="Project LeftBot">
           <img src={ImgRavenDB} alt="RavenDB" />
         </a>
-        <a
-          href="https://mvtnhan.github.io/realtime-chat-app/"
-          className="Project RightTop"
-        >
-          <img src={ImgRealtimeChatty} alt="RealtimeChatty" />
-        </a>
+        <Tooltip title="Real-Time Chat App" placement="top">
+          <a
+            href="https://mvtnhan.github.io/realtime-chat-app/"
+            className="Project RightTop"
+          >
+            <img src={ImgRealtimeChatty} alt="RealtimeChatty" />
+          </a>
+        </Tooltip>
+
         <a href="#/" className="Project RightMid">
           <img src={ImgHost365} alt="Host365" />
         </a>
