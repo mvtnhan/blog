@@ -57,7 +57,7 @@ const StyledCircularProgressBar = styled.div`
   }
 
   .CircularProgressbar-text {
-    fill: #3a3a3a;
+    fill: #405361;
     font-size: 24px;
     font-weight: bold;
   }

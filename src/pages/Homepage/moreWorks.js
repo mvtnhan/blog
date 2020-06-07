@@ -35,6 +35,7 @@ export function MoreWorks() {
           <a
             href="https://github.com/mvtnhan/todoapp"
             target="_blank"
+            rel="noopener noreferrer"
             className="Project LeftTop"
           >
             <img src={ImgTodo} alt="Todo" />
@@ -45,6 +46,7 @@ export function MoreWorks() {
           <a
             href="https://github.com/mvtnhan/blog"
             target="_blank"
+            rel="noopener noreferrer"
             className="Project LeftMid"
           >
             <img src={ImgResume} alt="Resume" />
@@ -54,10 +56,12 @@ export function MoreWorks() {
         <a href="#/" className="Project LeftBot">
           <img src={ImgRavenDB} alt="RavenDB" />
         </a>
+
         <Tooltip title="Real-Time Chat App" placement="top">
           <a
             href="https://github.com/mvtnhan/realtime-chat-app"
             target="_blank"
+            rel="noopener noreferrer"
             className="Project RightTop"
           >
             <img src={ImgRealtimeChatty} alt="RealtimeChatty" />

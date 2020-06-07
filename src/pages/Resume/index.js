@@ -37,9 +37,9 @@ const Wrapper = styled.div`
 
   .fa-print {
     position: absolute;
-    top: 8px;
+    top: 16px;
+    right: 16px;
     color: #d6d6d6;
-    right: 8px;
     font-size: 48px;
 
     :hover {

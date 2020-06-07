@@ -33,7 +33,6 @@ class TopNavBar extends React.Component {
         <Container>
           <div className="menuTopBar">
             <a href="/">Home</a>
-            <a href="/projects">Projects</a>
             <a href="/resume">Resume</a>
           </div>
         </Container>
@@ -64,7 +63,7 @@ const MenuBar = styled.div`
   .menuTopBar a {
     display: block;
     text-align: center;
-    padding: 8px 8px;
+    padding: 8px 16px;
     text-decoration: none;
     font-size: 24px;
     color: #895c32;

@@ -10,26 +10,18 @@ export function Projects() {
     <div>
       <BlockHeader title="Projects" />
       <BlockContent className="BlockContentRight">
-        <BlockProjects
-          projectname="Realtime chat app"
-          // company="Company / Institute Name"
-          // location="Washington DC, United States of America"
-          // year="2020"
-          description="An application called Chatty. It will allow only authenticated users
-          to send and read messages and users can sign up by providing their
-          email and creating a password, or by authenticating through a Google
-          or GitHub account."
-        />
-        <BlockProjects
-          projectname="Todo app"
-          // company="Company / Institute Name"
-          // location="Washington DC, United States of America"
-          // year="2020"
-          description="An application called Chatty. It will allow only authenticated users
-          to send and read messages and users can sign up by providing their
-          email and creating a password, or by authenticating through a Google
-          or GitHub account."
-        />
+        <>
+          <BlockProjects
+            link="https://github.com/mvtnhan/realtime-chat-app"
+            projectname="A Real-Time Chat App"
+            description="Using ReactJS and Firebase to create a simple real-time chat application"
+          />
+          <BlockProjects
+            link="https://github.com/mvtnhan/todoapp"
+            projectname="Todo App"
+            description="Building a simple TodoApp with different data structures using ES6, ReactJS and Styled-Component"
+          />
+        </>
       </BlockContent>
     </div>
   );
@@ -38,12 +30,11 @@ export function Projects() {
 function BlockProjects(props) {
   return (
     <StyledBlockProject className="BlockProject">
-      <h1>{props.projectname}</h1>
-      <p>{props.company}</p>
-      <div>
-        <span>{props.location}</span>
-        <p>{props.year}</p>
-      </div>
+      <h1>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          {props.projectname}
+        </a>
+      </h1>
       <span>{props.description}</span>
     </StyledBlockProject>
   );
@@ -51,33 +42,24 @@ function BlockProjects(props) {
 
 BlockProjects.propTypes = {
   projectname: PropTypes.string.isRequired,
-  //company: PropTypes.string.isRequired,
-  // location: PropTypes.string.isRequired,
-  // year: PropTypes.number.isRequired,
   description: PropTypes.string.isRequired,
 };
 
 const StyledBlockProject = styled.div`
-  &:before {
-    content: "";
-    display: block;
-    padding-top: 8px;
-  }
-
-  :after {
-    content: "";
-    display: block;
-    margin: 0;
-    width: 56px;
-    padding-top: 24px;
-    margin-bottom: 16px;
-    border-bottom: 1px solid #616161;
+  &:not(:last-child) {
+    padding-bottom: 16px;
   }
 
   h1 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 18px;
     margin: 0;
+    padding-bottom: 8px;
+
+    a {
+      color: #405361;
+      text-decoration: none;
+    }
   }
 
   p {

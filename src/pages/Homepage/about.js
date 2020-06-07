@@ -34,24 +34,23 @@ export function About() {
           <article>
             <h2>My Greetings & Handshake to You</h2>
             <p>
-              Welcome to my little place on the internet. I’m mvtnhan, frontend
-              engineer working with javaScript and ReactJS
+              Welcome to my little place on the internet. I’m Nhan, a frontend
+              engineer who loves working with JavaScript and ReactJS
             </p>
             <p>
-              Working within role of Developer Frontend. On each project I bring
-              a diversified set of skills which have been gathered from projects
+              Working within the role of frontend. On each project I bring a
+              diversified set of skills which have been gathered from projects
               of all sizes, versatile design styles and different markets.
             </p>
             <p>
-              I’m specialized in web design and development using handwritten
-              HTML, CSS and ES6. Love working with ReatJs, also have
-              considerable experience with Android platforms.
+              In addition to web development, I also have considerable
+              experience in working with Android.
             </p>
           </article>
         </div>
         <div className="AboutSectionTwo">
           <article className="HardAndPlay">
-            <h3>I Work Hard and Play Hard </h3>
+            <h3>I Work Hard and Play Hard</h3>
             <p>
               I consider stable communication and quick response important
               factors of project success. So when working together I think of me
@@ -62,7 +61,7 @@ export function About() {
               dig in with me and produce some great stuff which will not only
               look great but also achieve its goals. go get things rolling and
               &nbsp;
-              <a href="https://mvtnhan@gmail.com/">contact me</a>.
+              <a href="mailto:mvtnhan@gmail.com">contact me</a>.
             </p>
           </article>
           <div className="GreatUX">

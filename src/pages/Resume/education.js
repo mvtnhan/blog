@@ -11,7 +11,7 @@ export function Education() {
       <BlockContent>
         <div className="BoxEdu">
           <h1>
-            GIA DINH UNIVESITY <span>(2015-2020)</span>
+            GIA DINH UNIVESITY <span>(2015-2019)</span>
           </h1>
           <span>SOFTWARE ENGINEER</span>
         </div>
@@ -33,7 +33,7 @@ const StyledEducation = styled.div`
     h1 {
       margin: 0;
       font-size: 18px;
-      color: #1e1c27;
+      color: #405361;
     }
   }
 `;

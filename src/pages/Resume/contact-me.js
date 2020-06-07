@@ -61,7 +61,7 @@ const StyledContactMe = styled.div`
 
     i {
       font-size: 24px;
-      color: #3a3a3a;
+      color: #405361;
       width: 32px;
       padding-right: 8px;
     }

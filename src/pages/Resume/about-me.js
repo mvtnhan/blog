@@ -10,11 +10,9 @@ export function AboutMe() {
       <BlockHeader title="About me" />
       <BlockContent className="BlockContentRight">
         <p className="textAboutMe">
-          Hi, <br />
-          I'm Nhan. I'm a fresher on my way to be a frontend engineer. I
-          consider myself a positive person as I’ve never hesitated to encounter
-          new challenges. With my passion, I’m willing to learn and able to work
-          under a high workload so that I can have a chance to create a better
+          Hi! I'm Nhan, and I am a frontend engineer who has a passion for
+          creating beautiful user interfaces. With my passion, I’m willing to
+          learn and able to work under a high workload to create a better
           version of myself day after day.
         </p>
       </BlockContent>

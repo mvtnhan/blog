@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Tooltip from "@material-ui/core/Tooltip";
 
 import { Social } from "../../constants.js";
 
@@ -35,10 +34,13 @@ export function Footer() {
       <p>Copyright © 2020 Web mvtnhan. Contact Preferred Via:</p>
       <div className="IconFooter">
         {Sociallist.map((social) => (
-          <a href={social.link} key={social.content}>
-            <Tooltip title={social.content} placement="top">
-              <img className={social.img} alt="" />
-            </Tooltip>
+          <a
+            href={social.link}
+            key={social.content}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className={social.img} alt="" />
           </a>
         ))}
       </div>
@@ -58,6 +60,18 @@ const StyledFooter = styled.div`
   .IconFooter {
     display: flex;
     padding: 16px 8px;
+
+    a {
+      margin-right: 5px;
+      text-indent: -9999px;
+    }
+
+    img {
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
 
     .Email {
       background: url(${DesignElements}) no-repeat -191px -430px;
@@ -89,17 +103,6 @@ const StyledFooter = styled.div`
       &:hover {
         background: url(${DesignElements}) no-repeat -287px -462px;
       }
-    }
-    a {
-      margin-right: 5px;
-      text-indent: -9999px;
-    }
-
-    img {
-      display: block;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
     }
   }
 
