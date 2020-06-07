@@ -24,7 +24,7 @@ export function Footer() {
       content: "Twitter",
     },
     {
-      link: Social.Linkedin,
+      link: Social.linkedin,
       img: "Linkedin",
       content: "Linkedin",
     },
