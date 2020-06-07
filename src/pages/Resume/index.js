@@ -8,6 +8,10 @@ import { RightColumn } from "./right-column.js";
 import imgLeftBg from "./images/left-bg.png";
 import imgMainBg from "./images/main-bg.png";
 
+function Back() {
+  window.history.back();
+}
+
 function PrintFpt() {
   window.print();
 }
@@ -15,6 +19,7 @@ function PrintFpt() {
 export default function Resume() {
   return (
     <Wrapper>
+      <i className="fa fa-arrow-left" onClick={Back} />
       <i className="fa fa-print" onClick={PrintFpt} />
       <div className="page" data-size="A4">
         <Header />
@@ -35,16 +40,25 @@ const Wrapper = styled.div`
   height: 100vh;
   position: relative;
 
-  .fa-print {
+  .fa-print,
+  .fa-arrow-left {
     position: absolute;
-    top: 16px;
-    right: 16px;
     color: #d6d6d6;
-    font-size: 48px;
+    font-size: 24px;
 
     :hover {
       cursor: pointer;
     }
+  }
+
+  .fa-print {
+    top: 16px;
+    right: 16px;
+  }
+
+  .fa-arrow-left {
+    top: 16px;
+    left: 16px;
   }
 
   @media (max-height: 297mm) {
@@ -104,7 +118,8 @@ const Wrapper = styled.div`
     padding: 0;
     height: auto;
 
-    .fa-print {
+    .fa-print,
+    .fa-arrow-left {
       display: none;
     }
 
