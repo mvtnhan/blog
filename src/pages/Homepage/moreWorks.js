@@ -33,7 +33,8 @@ export function MoreWorks() {
       <Container>
         <Tooltip title="Todo Application" placement="top">
           <a
-            href="https://mvtnhan.github.io/todoapp/"
+            href="https://github.com/mvtnhan/todoapp"
+            target="_blank"
             className="Project LeftTop"
           >
             <img src={ImgTodo} alt="Todo" />
@@ -41,7 +42,11 @@ export function MoreWorks() {
         </Tooltip>
 
         <Tooltip title="Resume" placement="top">
-          <a href="/resume" className="Project LeftMid">
+          <a
+            href="https://github.com/mvtnhan/blog"
+            target="_blank"
+            className="Project LeftMid"
+          >
             <img src={ImgResume} alt="Resume" />
           </a>
         </Tooltip>
@@ -51,7 +56,8 @@ export function MoreWorks() {
         </a>
         <Tooltip title="Real-Time Chat App" placement="top">
           <a
-            href="https://mvtnhan.github.io/realtime-chat-app/"
+            href="https://github.com/mvtnhan/realtime-chat-app"
+            target="_blank"
             className="Project RightTop"
           >
             <img src={ImgRealtimeChatty} alt="RealtimeChatty" />
