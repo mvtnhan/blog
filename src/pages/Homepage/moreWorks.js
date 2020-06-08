@@ -6,9 +6,7 @@ import { Container } from "../../components/container.js";
 import CircleButton from "./circle-button";
 
 import BgWorks from "./images/worksbg.jpg";
-import ImgHost365 from "./images/host365.png";
 import ImgManDrawing from "./images/man-drawing.png";
-import ImgMedievalWall from "./images/medieval-wall.png";
 import ImgPlaceholder from "./images/placeholder.jpg";
 import ImgRealtimeChatty from "./images/chatty.png";
 import ImgResume from "./images/resume.png";
@@ -65,14 +63,14 @@ export function MoreWorks() {
         </Tooltip>
 
         <a href="#/" className="Project LeftBot">
-          <img src={ImgPlaceholder} alt="Placeholder" />
+          <img src={ImgPlaceholder} alt="Placeholder" className="Placeholder" />
         </a>
 
         <a href="#/" className="Project RightMid">
-          <img src={ImgPlaceholder} alt="Placeholder" />
+          <img src={ImgPlaceholder} alt="Placeholder" className="Placeholder" />
         </a>
         <a href="#/" className="Project RightBot">
-          <img src={ImgPlaceholder} alt="Placeholder" />
+          <img src={ImgPlaceholder} alt="Placeholder" className="Placeholder" />
         </a>
         <StyledCircleButton href="#">
           <em>MORE</em> WORKS
@@ -125,7 +123,7 @@ const StyledMoreWorks = styled.section`
   height: 680px;
   background: url(${BgWorks}) repeat-x left top;
 
-  img {
+  .Placeholder {
     border-radius: 50%;
   }
 
