@@ -132,11 +132,11 @@ const Wrapper = styled.div`
         .TitleName {
           align-items: center;
 
-          .Name {
+          .FullName {
             display: none;
           }
 
-          .NameResponsive {
+          .ShortName {
             display: block;
           }
 
@@ -147,7 +147,7 @@ const Wrapper = styled.div`
               margin: 0;
             }
 
-            p {
+            .Dash {
               display: none;
             }
           }
