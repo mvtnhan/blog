@@ -9,7 +9,7 @@ import BgWorks from "./images/worksbg.jpg";
 import ImgHost365 from "./images/host365.png";
 import ImgManDrawing from "./images/man-drawing.png";
 import ImgMedievalWall from "./images/medieval-wall.png";
-import ImgRavenDB from "./images/ravendb.png";
+import ImgPlaceholder from "./images/placeholder.jpg";
 import ImgRealtimeChatty from "./images/chatty.png";
 import ImgResume from "./images/resume.png";
 import ImgTodo from "./images/todo.png";
@@ -42,7 +42,7 @@ export function MoreWorks() {
           </a>
         </Tooltip>
 
-        <Tooltip title="Resume" placement="top">
+        <Tooltip title="My Online Curriculum Vitae" placement="top">
           <a
             href="https://github.com/mvtnhan/blog"
             target="_blank"
@@ -52,10 +52,6 @@ export function MoreWorks() {
             <img src={ImgResume} alt="Resume" />
           </a>
         </Tooltip>
-
-        <a href="#/" className="Project LeftBot">
-          <img src={ImgRavenDB} alt="RavenDB" />
-        </a>
 
         <Tooltip title="Real-Time Chat App" placement="top">
           <a
@@ -68,11 +64,15 @@ export function MoreWorks() {
           </a>
         </Tooltip>
 
+        <a href="#/" className="Project LeftBot">
+          <img src={ImgPlaceholder} alt="Placeholder" />
+        </a>
+
         <a href="#/" className="Project RightMid">
-          <img src={ImgHost365} alt="Host365" />
+          <img src={ImgPlaceholder} alt="Placeholder" />
         </a>
         <a href="#/" className="Project RightBot">
-          <img src={ImgMedievalWall} alt="ImgMedievalWall" />
+          <img src={ImgPlaceholder} alt="Placeholder" />
         </a>
         <StyledCircleButton href="#">
           <em>MORE</em> WORKS
@@ -124,6 +124,10 @@ const BlockQuote = styled.blockquote`
 const StyledMoreWorks = styled.section`
   height: 680px;
   background: url(${BgWorks}) repeat-x left top;
+
+  img {
+    border-radius: 50%;
+  }
 
   .ColumnWrapper {
     display: flex;

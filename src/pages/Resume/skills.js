@@ -13,9 +13,9 @@ export function Skills(props) {
         <SkillDescription>
           <h3>Technical Skills</h3>
           <ul>
-            <li>Convert PSD to responsive HTML and CSS.</li>
             <li>ReactJS, Javascript (ES6), CSS (SCSS).</li>
             <li>Git, Photoshop.</li>
+            <li>Good at converting PSD to responsive HTML and CSS.</li>
           </ul>
           <h3>Soft Skills</h3>
           <ul>

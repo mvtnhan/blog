@@ -8,19 +8,16 @@ import { RightColumn } from "./right-column.js";
 import imgLeftBg from "./images/left-bg.png";
 import imgMainBg from "./images/main-bg.png";
 
-function Back() {
-  window.history.back();
-}
-
-function PrintFpt() {
-  window.print();
-}
-
 export default function Resume() {
   return (
     <Wrapper>
-      <i className="fa fa-arrow-left" onClick={Back} />
-      <i className="fa fa-print" onClick={PrintFpt} />
+      <i
+        className="fa fa-arrow-left"
+        onClick={() => {
+          window.location.href = "./";
+        }}
+      />
+      <i className="fa fa-print" onClick={() => window.print()} />
       <div className="page" data-size="A4">
         <Header />
         <div className="Content">
