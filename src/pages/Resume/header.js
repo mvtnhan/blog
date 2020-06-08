@@ -10,7 +10,8 @@ export function Header(props) {
         <Avatar />
       </div>
       <div className="TitleName RightColumn">
-        <h1>Mai Vuong Trong Nhan</h1>
+        <h1 className="Name">Mai Vuong Trong Nhan</h1>
+        <h1 className="NameResponsive">Nhan Mai</h1>
         <div>
           <h2>Frontend Engineer</h2>
           <p />
@@ -49,10 +50,15 @@ const StyledHeader = styled.div`
       padding-left: 24px;
     }
 
-    h1 {
+    .Name,
+    .NameResponsive {
       margin: 0;
       color: #3c3c3c;
       font-size: 48px;
+    }
+
+    .NameResponsive {
+      display: none;
     }
 
     > div {
