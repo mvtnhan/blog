@@ -125,6 +125,34 @@ const Wrapper = styled.div`
 
     .page[data-size="A4"] {
       margin: 0;
+
+      .Header {
+        padding-top: 24px;
+
+        .TitleName {
+          align-items: center;
+
+          .FullName {
+            display: none;
+          }
+
+          .ShortName {
+            display: block;
+          }
+
+          > div {
+            justify-content: center;
+
+            h2 {
+              margin: 0;
+            }
+
+            .Dash {
+              display: none;
+            }
+          }
+        }
+      }
     }
 
     .RightColumn {
@@ -136,7 +164,7 @@ const Wrapper = styled.div`
       }
 
       .Skill {
-        padding: 24px;
+        padding: 0 24px;
       }
     }
 
@@ -148,6 +176,12 @@ const Wrapper = styled.div`
     .Header,
     .Content {
       flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .Skill {
+      flex-wrap: wrap;
     }
   }
 `;
