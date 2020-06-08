@@ -16,7 +16,14 @@ export function ContactMe() {
           </li>
           <li>
             <i className="fa fa-envelope" />
-            <a href="mailto:mvtnhan@gmail.com">mvtnhan@gmail.com</a>
+            <a
+              href="mailto:mvtnhan@gmail.com"
+              onClick={() => {
+                alert("This feature is currently under development");
+              }}
+            >
+              mvtnhan@gmail.com
+            </a>
           </li>
           <li>
             <i className="fa fa-globe" />
