@@ -11,6 +11,7 @@ import ImgPlaceholder from "./images/placeholder.jpg";
 import ImgRealtimeChatty from "./images/chatty.png";
 import ImgResume from "./images/resume.png";
 import ImgTodo from "./images/todo.png";
+import ImgLivolin from "./images/livolin.jpg";
 import SpriteImage from "./images/design-elements.png";
 
 const StyledCircleButton = styled(CircleButton)`
@@ -62,15 +63,22 @@ export function MoreWorks() {
           </a>
         </Tooltip>
 
-        <a href="#/" className="Project LeftBot">
-          <img src={ImgPlaceholder} alt="Placeholder" className="Placeholder" />
-        </a>
+        <Tooltip title="Livolin hompepage" placement="top">
+          <a
+            href="https://github.com/mvtnhan/livolin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Project RightMid"
+          >
+            <img src={ImgLivolin} alt="RealtimeChatty" className="Round" />
+          </a>
+        </Tooltip>
 
-        <a href="#/" className="Project RightMid">
-          <img src={ImgPlaceholder} alt="Placeholder" className="Placeholder" />
+        <a href="#/" className="Project LeftBot">
+          <img src={ImgPlaceholder} alt="Placeholder" className="Round" />
         </a>
         <a href="#/" className="Project RightBot">
-          <img src={ImgPlaceholder} alt="Placeholder" className="Placeholder" />
+          <img src={ImgPlaceholder} alt="Placeholder" className="Round" />
         </a>
         <StyledCircleButton href="#">
           <em>MORE</em> WORKS
@@ -123,7 +131,7 @@ const StyledMoreWorks = styled.section`
   height: 680px;
   background: url(${BgWorks}) repeat-x left top;
 
-  .Placeholder {
+  .Round {
     border-radius: 50%;
   }
 
