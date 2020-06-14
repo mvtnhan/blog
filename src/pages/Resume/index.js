@@ -170,9 +170,12 @@ const Wrapper = styled.div`
       background-color: transparent;
     }
 
-    .Header,
-    .Content {
+    .Header {
       flex-direction: column;
+    }
+
+    .Content {
+      flex-wrap: wrap;
     }
   }
 
