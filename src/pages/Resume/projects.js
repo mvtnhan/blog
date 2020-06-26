@@ -21,6 +21,11 @@ export function Projects() {
             projectname="Todo App"
             description="Building a simple TodoApp with different data structures using ES6, ReactJS and Styled-Component"
           />
+          <BlockProjects
+            link="https://github.com/mvtnhan/flappy-bird"
+            projectname="Flappy Bird"
+            description="Flappy Bird Game using reactjs, redux and redux-thunk"
+          />
         </>
       </BlockContent>
     </div>

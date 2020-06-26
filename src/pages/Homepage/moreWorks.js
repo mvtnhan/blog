@@ -12,6 +12,7 @@ import ImgRealtimeChatty from "./images/chatty.png";
 import ImgResume from "./images/resume.png";
 import ImgTodo from "./images/todo.png";
 import ImgLivolin from "./images/livolin.jpg";
+import ImgFlappyBird from "./images/flappy-bird.jpg";
 import SpriteImage from "./images/design-elements.png";
 
 const StyledCircleButton = styled(CircleButton)`
@@ -70,13 +71,21 @@ export function MoreWorks() {
             rel="noopener noreferrer"
             className="Project RightMid"
           >
-            <img src={ImgLivolin} alt="RealtimeChatty" className="Round" />
+            <img src={ImgLivolin} alt="Livolin" className="Round" />
           </a>
         </Tooltip>
 
-        <a href="#/" className="Project LeftBot">
-          <img src={ImgPlaceholder} alt="Placeholder" className="Round" />
-        </a>
+        <Tooltip title="flappy bird game" placement="top">
+          <a
+            href="https://github.com/mvtnhan/flappy-bird"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Project LeftBot"
+          >
+            <img src={ImgFlappyBird} alt="FlappyBird" className="Round" />
+          </a>
+        </Tooltip>
+
         <a href="#/" className="Project RightBot">
           <img src={ImgPlaceholder} alt="Placeholder" className="Round" />
         </a>
