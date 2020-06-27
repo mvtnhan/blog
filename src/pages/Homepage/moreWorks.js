@@ -6,13 +6,13 @@ import { Container } from "../../components/container.js";
 import CircleButton from "./circle-button";
 
 import BgWorks from "./images/worksbg.jpg";
+import ImgEnergy from "./images/energy.png";
+import ImgFlappyBird from "./images/flappy-bird.jpg";
+import ImgLivolin from "./images/livolin.jpg";
 import ImgManDrawing from "./images/man-drawing.png";
-import ImgPlaceholder from "./images/placeholder.jpg";
 import ImgRealtimeChatty from "./images/chatty.png";
 import ImgResume from "./images/resume.png";
 import ImgTodo from "./images/todo.png";
-import ImgLivolin from "./images/livolin.jpg";
-import ImgFlappyBird from "./images/flappy-bird.jpg";
 import SpriteImage from "./images/design-elements.png";
 
 const StyledCircleButton = styled(CircleButton)`
@@ -86,9 +86,17 @@ export function MoreWorks() {
           </a>
         </Tooltip>
 
-        <a href="#/" className="Project RightBot">
-          <img src={ImgPlaceholder} alt="Placeholder" className="Round" />
-        </a>
+        <Tooltip title="energy" placement="top">
+          <a
+            href="https://github.com/mvtnhan/energy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Project RightBot"
+          >
+            <img src={ImgEnergy} alt="energy" className="Round" />
+          </a>
+        </Tooltip>
+
         <StyledCircleButton href="#">
           <em>MORE</em> WORKS
         </StyledCircleButton>
