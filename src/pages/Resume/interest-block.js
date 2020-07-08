@@ -49,10 +49,6 @@ const StyledInterest = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      :nth-child(3) {
-        width: 100%;
-      }
     }
 
     .Code {
@@ -60,7 +56,7 @@ const StyledInterest = styled.div`
     }
 
     i {
-      font-size: 40px;
+      font-size: 32px;
       color: #405361;
       width: 32px;
       padding-right: 8px;

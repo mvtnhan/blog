@@ -5,7 +5,7 @@ import BlockContent from "./block-content";
 import BlockHeader from "./block-header.js";
 import CircularProgressBar from "../../components/circular-progress-bar.js";
 
-export function Skills(props) {
+export default function Skills(props) {
   return (
     <div>
       <BlockHeader title="Skills" />
@@ -13,7 +13,7 @@ export function Skills(props) {
         <SkillDescription>
           <h3>Technical Skills</h3>
           <ul>
-            <li>ReactJS, Javascript (ES6), CSS (SCSS).</li>
+            <li>ReactJS, Redux, React Hooks, Javascript (ES6), CSS (SCSS).</li>
             <li>Git, Photoshop.</li>
             <li>Good at converting PSD to responsive HTML and CSS.</li>
           </ul>
@@ -44,7 +44,7 @@ export function Skills(props) {
 }
 
 const StyledCircularProgressBar = styled(CircularProgressBar)`
-  width: 88px;
+  width: 64px;
 
   @media screen and (max-width: 450px) {
     margin: 0 16px 16px;
@@ -71,7 +71,8 @@ const SkillDescription = styled.div`
 `;
 
 const SkillAnimation = styled.div`
-  justify-content: space-between;
+  justify-content: space-evenly;
   display: flex;
-  margin-top: 8px;
+  margin-top: 4px;
+  margin-bottom: 24px;
 `;

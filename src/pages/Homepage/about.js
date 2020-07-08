@@ -28,7 +28,7 @@ export function About() {
       <Container>
         <div className="AboutSectionOne">
           <img src={ImgAbout} alt="About" width="727" height="375" />
-          <StyledCircleButton>
+          <StyledCircleButton href="#">
             Craftsman <em>Photo</em>
           </StyledCircleButton>
           <article>

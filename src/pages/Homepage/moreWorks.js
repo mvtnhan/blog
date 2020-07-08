@@ -6,7 +6,7 @@ import { Container } from "../../components/container.js";
 import CircleButton from "./circle-button";
 
 import BgWorks from "./images/worksbg.jpg";
-import ImgEnergy from "./images/energy.png";
+import ImgTetris from "./images/tetris.png";
 import ImgFlappyBird from "./images/flappy-bird.jpg";
 import ImgLivolin from "./images/livolin.jpg";
 import ImgManDrawing from "./images/man-drawing.png";
@@ -86,14 +86,14 @@ export function MoreWorks() {
           </a>
         </Tooltip>
 
-        <Tooltip title="energy" placement="top">
+        <Tooltip title="Tetris Game" placement="top">
           <a
-            href="https://github.com/mvtnhan/energy"
+            href="https://github.com/mvtnhan/tetris"
             target="_blank"
             rel="noopener noreferrer"
             className="Project RightBot"
           >
-            <img src={ImgEnergy} alt="energy" className="Round" />
+            <img src={ImgTetris} alt="Tetris" className="Round" />
           </a>
         </Tooltip>
 
