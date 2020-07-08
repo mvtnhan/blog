@@ -4,7 +4,7 @@ import styled from "styled-components";
 import BlockContent from "./block-content";
 import BlockHeader from "./block-header.js";
 
-export function ContactMe() {
+export default function ContactMe() {
   return (
     <StyledContactMe>
       <BlockHeader title="Contact me" />

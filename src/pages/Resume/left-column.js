@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-import { ContactMe } from "./contact-me.js";
-import { Education } from "./education.js";
+import AboutMe from "./about-me.js";
+import ContactMe from "./contact-me.js";
+import Education from "./education.js";
 import Interest from "./interest-block.js";
 
-export function LeftColumn() {
+export default function LeftColumn() {
   return (
     <StyledLeftColumn className="LeftColumn">
       <div className="BlockWrapper">
+        <AboutMe />
         <ContactMe />
         <Education />
         <Interest />

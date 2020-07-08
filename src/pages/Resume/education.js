@@ -4,7 +4,7 @@ import styled from "styled-components";
 import BlockContent from "./block-content";
 import BlockHeader from "./block-header.js";
 
-export function Education() {
+export default function Education() {
   return (
     <StyledEducation>
       <BlockHeader title="Education" />

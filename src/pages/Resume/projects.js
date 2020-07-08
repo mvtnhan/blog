@@ -5,7 +5,7 @@ import styled from "styled-components";
 import BlockContent from "./block-content";
 import BlockHeader from "./block-header.js";
 
-export function Projects() {
+export default function Projects() {
   return (
     <div>
       <BlockHeader title="Projects" />
@@ -25,6 +25,11 @@ export function Projects() {
             link="https://github.com/mvtnhan/flappy-bird"
             projectname="Flappy Bird"
             description="Flappy Bird Game using reactjs, redux and redux-thunk"
+          />
+          <BlockProjects
+            link="https://github.com/mvtnhan/tetris"
+            projectname="Tetris"
+            description="Tetris Game using reactjs and react-hooks"
           />
         </>
       </BlockContent>

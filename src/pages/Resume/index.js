@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import { Header } from "./header.js";
-import { LeftColumn } from "./left-column.js";
-import { RightColumn } from "./right-column.js";
+import LeftColumn from "./left-column.js";
+import RightColumn from "./right-column.js";
 
 import imgLeftBg from "./images/left-bg.png";
 import imgMainBg from "./images/main-bg.png";
@@ -67,6 +67,7 @@ const Wrapper = styled.div`
     border: 8px solid white;
     border-radius: 4px;
     margin: 24px 0;
+    height: 100%;
 
     .Header {
       height: 72mm;
@@ -176,6 +177,7 @@ const Wrapper = styled.div`
 
     .Content {
       flex-wrap: wrap;
+      height: 100% !important;
     }
   }
 

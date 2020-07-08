@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-import { AboutMe } from "./about-me.js";
-import { Projects } from "./projects.js";
-import { Skills } from "./skills.js";
+import WorkExperience from "./work-experience.js";
+import Projects from "./projects.js";
+import Skills from "./skills.js";
 
-export function RightColumn() {
+export default function RightColumn() {
   return (
     <StyledRightColumn className="RightColumn">
       <div className="BlockWrapper">
-        <AboutMe />
+        <WorkExperience />
         <Projects />
         <Skills className="Skill" />
       </div>
