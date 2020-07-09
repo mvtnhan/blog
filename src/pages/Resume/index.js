@@ -67,7 +67,7 @@ const Wrapper = styled.div`
     border: 8px solid white;
     border-radius: 4px;
     margin: 24px 0;
-    height: 100%;
+    /* height: 100%; */
 
     .Header {
       height: 72mm;
@@ -123,6 +123,7 @@ const Wrapper = styled.div`
 
     .page[data-size="A4"] {
       margin: 0;
+      height: unset;
 
       .Header {
         padding-top: 24px;
