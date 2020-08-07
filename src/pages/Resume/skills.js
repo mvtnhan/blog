@@ -73,6 +73,4 @@ const SkillDescription = styled.div`
 const SkillAnimation = styled.div`
   justify-content: space-evenly;
   display: flex;
-  margin-top: 4px;
-  margin-bottom: 24px;
 `;

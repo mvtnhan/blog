@@ -7,7 +7,7 @@ export default function WorkExperience() {
     <div>
       <BlockHeader title="Work Experience" />
       <BlockWorkExp
-        projectname="Freelancer"
+        projectname="PHU THUAN THANH CO.LTD"
         year="2019-2020"
         description="Translated designs, wireframe, and business requirements into code."
       />
