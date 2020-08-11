@@ -13,7 +13,10 @@ export default function Skills(props) {
         <SkillDescription>
           <h3>Technical Skills</h3>
           <ul>
-            <li>ReactJS, Redux, React Hooks, Javascript (ES6), CSS (SCSS).</li>
+            <li>
+              ReactJS, Redux, React Hooks, Form, Fromik & Yup, Javascript (ES6),
+              CSS (SCSS).
+            </li>
             <li>Git, Photoshop.</li>
             <li>Good at converting PSD to responsive HTML and CSS.</li>
           </ul>
@@ -44,8 +47,8 @@ export default function Skills(props) {
 }
 
 const StyledCircularProgressBar = styled(CircularProgressBar)`
-  width: 64px;
-
+  width: 56px;
+  margin-top: -16px;
   @media screen and (max-width: 450px) {
     margin: 0 16px 16px;
   }

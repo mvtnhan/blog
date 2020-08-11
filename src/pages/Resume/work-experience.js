@@ -8,8 +8,8 @@ export default function WorkExperience() {
       <BlockHeader title="Work Experience" />
       <BlockWorkExp
         projectname="PHU THUAN THANH CO.LTD"
-        year="2019-2020"
-        description="Translated designs, wireframe, and business requirements into code."
+        year="2019-Present"
+        description="Develop in-house components, translated designs, wireframe, and business requirements into code."
       />
     </div>
   );
