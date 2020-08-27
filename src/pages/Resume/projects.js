@@ -64,7 +64,7 @@ const StyledBlockProject = styled.div`
     text-transform: capitalize;
     font-size: 18px;
     margin: 0;
-    padding-bottom: 8px;
+    padding-bottom: 0px;
 
     a {
       color: #405361;

@@ -6,10 +6,11 @@ export default function BlockWorkExp(props) {
   return (
     <StyledBlockWorkExp className="BlockContentRight">
       <div>
-        <h1>{props.projectname}</h1>
+        <h1>{props.company}</h1>
         <p>{props.year}</p>
       </div>
-      {/* <p>{props.company}</p>
+      {/* <p>
+      {props.projectname}</p>
       <span>{props.location}</span> */}
       <span>{props.description}</span>
     </StyledBlockWorkExp>
@@ -25,7 +26,10 @@ BlockWorkExp.propTypes = {
 };
 
 const StyledBlockWorkExp = styled.div`
-  padding: 24px;
+  &:nth-last-child(1) {
+    padding-bottom: 24px;
+  }
+  padding: 24px 24px 0px 24px;
 
   h1 {
     text-transform: uppercase;
@@ -34,13 +38,18 @@ const StyledBlockWorkExp = styled.div`
     margin: 0;
   }
 
+  a {
+    text-decoration: none;
+    color: #323232;
+  }
+
   p {
     margin: 0 auto 4px;
   }
 
   > div {
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 0;
 
     span {
       object-fit: contain;
