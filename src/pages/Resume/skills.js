@@ -47,8 +47,8 @@ export default function Skills(props) {
 }
 
 const StyledCircularProgressBar = styled(CircularProgressBar)`
-  width: 56px;
-  margin-top: -16px;
+  width: 64px;
+  /* margin-top: -16px; */
   @media screen and (max-width: 450px) {
     margin: 0 16px 16px;
   }
