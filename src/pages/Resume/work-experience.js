@@ -13,10 +13,22 @@ export default function WorkExperience() {
       /> */}
       <BlockWorkExp
         company="Eastplayers"
-        year="2020-Present"
+        year="2020"
         description={
           <a href="https://www.cmenergy.vn/">
             Front-end Developer of Copper Mountain Energy.
+          </a>
+        }
+      />
+
+      <BlockWorkExp
+        company="Selego"
+        year="2020-Present"
+        description={
+          <a 
+          //href="https://www.cmenergy.vn/"
+          >
+            Front-end Developer.
           </a>
         }
       />
