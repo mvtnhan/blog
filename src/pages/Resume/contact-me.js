@@ -40,8 +40,7 @@ export default function ContactMe() {
               <i className="fa fa-home" />
             </div>
             <span>
-              Tan Son Nhi Street, Tan Son Nhi Ward,
-              <br /> Tan Phu District, Ho Chi Minh City
+          Tan Phu District, Ho Chi Minh City
             </span>
           </li>
         </ul>

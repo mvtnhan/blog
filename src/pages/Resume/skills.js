@@ -14,7 +14,7 @@ export default function Skills(props) {
           <h3>Technical Skills</h3>
           <ul>
             <li>
-              ReactJS, Redux, React Hooks, Form, Fromik & Yup, Javascript (ES6),
+              ReactJS, Redux, React Hooks, Fromik & Yup, Javascript (ES6),
               CSS (SCSS).
             </li>
             <li>Git, Photoshop.</li>
@@ -28,7 +28,7 @@ export default function Skills(props) {
           </ul>
         </SkillDescription>
       </BlockContent>
-      {/* <SkillAnimation className={props.className}>
+      <SkillAnimation className={props.className}>
         <StyledCircularProgressBar percentEnd={70} duration={3}>
           CSS
         </StyledCircularProgressBar>
@@ -41,7 +41,7 @@ export default function Skills(props) {
         <StyledCircularProgressBar percentEnd={40} duration={1.5}>
           REACT
         </StyledCircularProgressBar>
-      </SkillAnimation> */}
+      </SkillAnimation>
     </div>
   );
 }
@@ -76,4 +76,5 @@ const SkillDescription = styled.div`
 const SkillAnimation = styled.div`
   justify-content: space-evenly;
   display: flex;
+  padding-top: 24px;
 `;

@@ -11,26 +11,31 @@ export default function Projects() {
       <BlockHeader title="Projects" />
       <BlockContent className="BlockContentRight">
         <>
-          <BlockProjects
-            link="https://github.com/mvtnhan/realtime-chat-app"
-            projectname="A Real-Time Chat App"
-            description="Using ReactJS and Firebase to create a simple real-time chat application"
-          />
-          <BlockProjects
-            link="https://github.com/mvtnhan/todoapp"
-            projectname="Todo App"
-            description="Building a simple TodoApp with different data structures using ES6, ReactJS and Styled-Component"
+        <BlockProjects
+            link="https://cmenergy.vn/"
+            projectname="CME"
+            description="Translated designs, wireframe, and business requirements into code."
           />
           <BlockProjects
             link="https://github.com/mvtnhan/flappy-bird"
             projectname="Flappy Bird"
-            description="Flappy Bird Game using reactjs, redux and redux-thunk"
+            description="Flappy Bird Game using reactjs, redux and Styled-Component"
           />
           <BlockProjects
             link="https://github.com/mvtnhan/tetris"
             projectname="Tetris"
             description="Tetris Game using reactjs and react-hooks"
           />
+          {/* <BlockProjects
+            link="https://github.com/mvtnhan/realtime-chat-app"
+            projectname="A Real-Time Chat App"
+            description="Using ReactJS and Firebase to create a simple real-time chat application"
+          /> */}
+          {/* <BlockProjects
+            link="https://github.com/mvtnhan/todoapp"
+            projectname="Todo App"
+            description="Building a simple TodoApp with different data structures using ES6, ReactJS and Styled-Component"
+          /> */}
         </>
       </BlockContent>
     </div>
