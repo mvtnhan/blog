@@ -56,7 +56,7 @@ const StyledCircularProgressBar = styled(CircularProgressBar)`
 
 const SkillDescription = styled.div`
   h3 {
-    margin: 8px 0 0;
+    margin: 16px 0 8px;
     color: #405361;
 
     &:first-child {
@@ -68,7 +68,7 @@ const SkillDescription = styled.div`
 
     li {
       list-style-type: disc;
-      margin-left: 24px;
+      margin: 0 0 2px 24px;
     }
   }
 `;

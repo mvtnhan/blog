@@ -49,7 +49,7 @@ const StyledBlockWorkExp = styled.div`
 
   > div {
     display: flex;
-    margin-bottom: 0;
+    margin-bottom: 8px;
 
     span {
       object-fit: contain;
