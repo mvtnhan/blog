@@ -8,10 +8,10 @@ import CircleButton from "./circle-button";
 import BgWorks from "./images/worksbg.jpg";
 import ImgTetris from "./images/tetris.png";
 import ImgFlappyBird from "./images/flappy-bird.jpg";
-import ImgLivolin from "./images/livolin.jpg";
+import ImgMinesweeper from "./images/minesweeper.png";
 import ImgManDrawing from "./images/man-drawing.png";
 import ImgRealtimeChatty from "./images/chatty.png";
-import ImgResume from "./images/resume.png";
+import ImgSnake from "./images/snake.png";
 import ImgTodo from "./images/todo.png";
 import SpriteImage from "./images/design-elements.png";
 
@@ -42,36 +42,14 @@ export function MoreWorks() {
           </a>
         </Tooltip>
 
-        <Tooltip title="My Online Curriculum Vitae" placement="top">
+        <Tooltip title="snake game" placement="top">
           <a
-            href="https://github.com/mvtnhan/blog"
+            href="https://snake-mvtnhan.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="Project LeftMid"
+            className="Project LeftBot"
           >
-            <img src={ImgResume} alt="Resume" />
-          </a>
-        </Tooltip>
-
-        <Tooltip title="Real-Time Chat App" placement="top">
-          <a
-            href="https://github.com/mvtnhan/realtime-chat-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="Project RightTop"
-          >
-            <img src={ImgRealtimeChatty} alt="RealtimeChatty" />
-          </a>
-        </Tooltip>
-
-        <Tooltip title="Livolin hompepage" placement="top">
-          <a
-            href="https://github.com/mvtnhan/livolin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="Project RightMid"
-          >
-            <img src={ImgLivolin} alt="Livolin" className="Round" />
+            <img src={ImgSnake} alt="Snake" className="Round" />
           </a>
         </Tooltip>
 
@@ -80,9 +58,20 @@ export function MoreWorks() {
             href="https://github.com/mvtnhan/flappy-bird"
             target="_blank"
             rel="noopener noreferrer"
-            className="Project LeftBot"
+            className="Project LeftMid"
           >
             <img src={ImgFlappyBird} alt="FlappyBird" className="Round" />
+          </a>
+        </Tooltip>
+
+        <Tooltip title="minesweeper game" placement="top">
+          <a
+            href="https://minesweeper-mvtnhan.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Project RightTop"
+          >
+            <img src={ImgMinesweeper} alt="Minesweeper" className="Round" />
           </a>
         </Tooltip>
 
@@ -91,9 +80,20 @@ export function MoreWorks() {
             href="https://github.com/mvtnhan/tetris"
             target="_blank"
             rel="noopener noreferrer"
-            className="Project RightBot"
+            className="Project RightMid"
           >
             <img src={ImgTetris} alt="Tetris" className="Round" />
+          </a>
+        </Tooltip>
+
+        <Tooltip title="Real-Time Chat App" placement="top">
+          <a
+            href="https://github.com/mvtnhan/realtime-chat-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Project RightBot"
+          >
+            <img src={ImgRealtimeChatty} alt="RealtimeChatty" />
           </a>
         </Tooltip>
 

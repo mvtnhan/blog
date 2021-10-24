@@ -32,16 +32,14 @@ export default function ContactMe() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              mvtnhan.now.sh
+              mvtnhan.vercel.app
             </a>
           </li>
           <li>
             <div>
               <i className="fa fa-home" />
             </div>
-            <span>
-          Tan Phu District, Ho Chi Minh City
-            </span>
+            <span>Tan Phu District, Ho Chi Minh City</span>
           </li>
         </ul>
       </BlockContent>

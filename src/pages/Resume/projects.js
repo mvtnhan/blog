@@ -11,7 +11,12 @@ export default function Projects() {
       <BlockHeader title="Projects" />
       <BlockContent className="BlockContentRight">
         <>
-        <BlockProjects
+          <BlockProjects
+            link="https://minesweeper-mvtnhan.vercel.app/"
+            projectname="Minesweeper"
+            description="A Game using reactjs, react-hooks, custom-hooks and ant-design"
+          />
+          <BlockProjects
             link="https://cmenergy.vn/"
             projectname="CME"
             description="Translated designs, wireframe, and business requirements into code."
@@ -26,11 +31,6 @@ export default function Projects() {
             projectname="Tetris"
             description="Tetris Game using reactjs and react-hooks"
           />
-          {/* <BlockProjects
-            link="https://github.com/mvtnhan/realtime-chat-app"
-            projectname="A Real-Time Chat App"
-            description="Using ReactJS and Firebase to create a simple real-time chat application"
-          /> */}
           {/* <BlockProjects
             link="https://github.com/mvtnhan/todoapp"
             projectname="Todo App"

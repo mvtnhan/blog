@@ -13,9 +13,12 @@ export default function Skills(props) {
         <SkillDescription>
           <h3>Technical Skills</h3>
           <ul>
+            {/* <li>
+              ReactJS, Redux, React Hooks, Fromik & Yup, Javascript (ES6), CSS
+              (SCSS).
+            </li> */}
             <li>
-              ReactJS, Redux, React Hooks, Fromik & Yup, Javascript (ES6),
-              CSS (SCSS).
+              ReactJS, React Hooks, Custom-hooks, Javascript (ES6), CSS (SCSS).
             </li>
             <li>Git, Photoshop.</li>
             <li>Good at converting PSD to responsive HTML and CSS.</li>

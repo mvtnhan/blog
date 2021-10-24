@@ -8,11 +8,11 @@ export default function WorkExperience() {
       <BlockHeader title="Work Experience" />
       <BlockWorkExp
         company="Eastplayers"
-        year="2020-Present"
+        // year="2020-Present"
         description={
           <a href="https://www.cmenergy.vn/">
-            Front-end Developer of Copper Mountain Energy.
-            Translated designs, wireframe, and business requirements into code.
+            Front-end Developer of Copper Mountain Energy. Translated designs,
+            wireframe, and business requirements into code.
           </a>
         }
       />
