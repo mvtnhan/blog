@@ -17,17 +17,17 @@ export default function WorkExperience() {
         }
       />
 
-      {/* <BlockWorkExp
-        company="Selego"
-        year="2020-Present"
+      <BlockWorkExp
+        company="TMA Solutions"
+        // year="2020-Present"
         description={
-          <a 
+          <a
           //href="https://www.cmenergy.vn/"
           >
-            Translated designs, wireframe, and business requirements into code.
+            Front-end Developer
           </a>
         }
-      /> */}
+      />
     </div>
   );
 }

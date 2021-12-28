@@ -31,7 +31,7 @@ export default function Skills(props) {
           </ul>
         </SkillDescription>
       </BlockContent>
-      <SkillAnimation className={props.className}>
+      {/* <SkillAnimation className={props.className}>
         <StyledCircularProgressBar percentEnd={70} duration={3}>
           CSS
         </StyledCircularProgressBar>
@@ -44,7 +44,7 @@ export default function Skills(props) {
         <StyledCircularProgressBar percentEnd={40} duration={1.5}>
           REACT
         </StyledCircularProgressBar>
-      </SkillAnimation>
+      </SkillAnimation> */}
     </div>
   );
 }
