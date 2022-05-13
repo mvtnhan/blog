@@ -18,7 +18,7 @@ export default function Skills(props) {
               (SCSS).
             </li> */}
             <li>
-              ReactJS, React Hooks, Custom-hooks, Javascript (ES6), CSS (SCSS).
+              ReactJS, React Hooks, Custom-hooks, Javascript (ES6), CSS (SCSS), TypeScript, React Testing Library.
             </li>
             <li>Git, Photoshop.</li>
             <li>Good at converting PSD to responsive HTML and CSS.</li>
