@@ -12,24 +12,24 @@ export default function Projects() {
       <BlockContent className="BlockContentRight">
         <>
           <BlockProjects
-            link="https://minesweeper-mvtnhan.vercel.app/"
-            projectname="Minesweeper"
-            description="A Game using reactjs, react-hooks, custom-hooks and ant-design"
-          />
-          <BlockProjects
-            link="https://cmenergy.vn/"
+            link="https://cmenergy.vn"
             projectname="CME"
             description="Translated designs, wireframe, and business requirements into code."
           />
           <BlockProjects
-            link="https://github.com/mvtnhan/flappy-bird"
-            projectname="Flappy Bird"
-            description="Flappy Bird Game using reactjs, redux and Styled-Component"
+            link="https://cooking-recipe-delicious.vercel.app"
+            projectname="Cooking Recipe"
+            description="Cooking Recipe using reactjs, Spoonnacular Api and Styled-Component"
           />
           <BlockProjects
-            link="https://github.com/mvtnhan/tetris"
-            projectname="Tetris"
-            description="Tetris Game using reactjs and react-hooks"
+            link="https://fun-with-ai-mvtnhan.vercel.app"
+            projectname="Chat With AI GPT-3"
+            description="GPT-3 is a powerful AI model created by OpenAI"
+          />
+          <BlockProjects
+            link="https://minesweeper-mvtnhan.vercel.app"
+            projectname="Minesweeper"
+            description="A Game using reactjs, react-hooks, custom-hooks and ant-design"
           />
           {/* <BlockProjects
             link="https://github.com/mvtnhan/todoapp"
