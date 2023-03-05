@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+import CircularProgressBar from "../../components/circular-progress-bar.js";
 import BlockContent from "./block-content";
 import BlockHeader from "./block-header.js";
-import CircularProgressBar from "../../components/circular-progress-bar.js";
 
 export default function Skills(props) {
   return (
@@ -13,12 +13,9 @@ export default function Skills(props) {
         <SkillDescription>
           <h3>Technical Skills</h3>
           <ul>
-            {/* <li>
-              ReactJS, Redux, React Hooks, Fromik & Yup, Javascript (ES6), CSS
-              (SCSS).
-            </li> */}
             <li>
-              ReactJS, React Hooks, Custom-hooks, Javascript (ES6), CSS (SCSS), TypeScript, React Testing Library.
+              ReactJS, React Hooks, Javascript (ES6), CSS (SCSS), TypeScript,
+              React Testing Library.
             </li>
             <li>Git, Photoshop.</li>
             <li>Good at converting PSD to responsive HTML and CSS.</li>

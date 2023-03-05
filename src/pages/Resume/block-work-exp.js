@@ -9,9 +9,8 @@ export default function BlockWorkExp(props) {
         <h1>{props.company}</h1>
         <p>{props.year}</p>
       </div>
-      {/* <p>
-      {props.projectname}</p>
-      <span>{props.location}</span> */}
+      <p>{props.projectname}</p>
+      <span>{props.location}</span>
       <span>{props.description}</span>
     </StyledBlockWorkExp>
   );
@@ -44,12 +43,12 @@ const StyledBlockWorkExp = styled.div`
   }
 
   p {
-    margin: 0 auto 4px;
+    margin: 0 auto 8px;
   }
 
   > div {
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 
     span {
       object-fit: contain;

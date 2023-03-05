@@ -11,7 +11,8 @@ export default function Education() {
       <BlockContent>
         <div className="BoxEdu">
           <h1>
-            GIA DINH UNIVESITY <span>(2016-2020)</span>
+            GIA DINH UNIVESITY
+            {/* <span>(2016-2020)</span> */}
           </h1>
           <span>SOFTWARE ENGINEER</span>
         </div>

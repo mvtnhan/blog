@@ -12,29 +12,29 @@ export default function Projects() {
       <BlockContent className="BlockContentRight">
         <>
           <BlockProjects
-            link="https://minesweeper-mvtnhan.vercel.app/"
-            projectname="Minesweeper"
-            description="A Game using reactjs, react-hooks, custom-hooks and ant-design"
-          />
-          <BlockProjects
-            link="https://cmenergy.vn/"
-            projectname="CME"
+            link="https://cmenergy.vn"
+            projectname="Copper Mountain Energy"
             description="Translated designs, wireframe, and business requirements into code."
           />
           <BlockProjects
-            link="https://github.com/mvtnhan/flappy-bird"
-            projectname="Flappy Bird"
-            description="Flappy Bird Game using reactjs, redux and Styled-Component"
+            link="https://minesweeper-mvtnhan.vercel.app"
+            projectname="Minesweeper"
+            description="A Game using reactjs, react-hooks, custom-hooks and ant-design."
           />
           <BlockProjects
-            link="https://github.com/mvtnhan/tetris"
-            projectname="Tetris"
-            description="Tetris Game using reactjs and react-hooks"
+            link="https://gym-mvtnhan.vercel.app"
+            projectname="Gym"
+            description="A gym website, using Reactjs with RapidAPI."
+          />
+          <BlockProjects
+            link="https://wav-to-midi-mvtnhan.vercel.app"
+            projectname="WAV to MIDI"
+            description="Building a simple online WAV to MIDI converter using ReactJS, TypeScript, NextJS and Styled-Component."
           />
           {/* <BlockProjects
-            link="https://github.com/mvtnhan/todoapp"
-            projectname="Todo App"
-            description="Building a simple TodoApp with different data structures using ES6, ReactJS and Styled-Component"
+            link="https://fun-with-ai-mvtnhan.vercel.app"
+            projectname="Chat With AI GPT-3"
+            description="GPT-3 is a powerful AI model created by OpenAI."
           /> */}
         </>
       </BlockContent>

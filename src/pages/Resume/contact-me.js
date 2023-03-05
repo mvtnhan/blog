@@ -12,7 +12,7 @@ export default function ContactMe() {
         <ul>
           <li>
             <i className="fa fa-phone" />
-            <span>+84 929 4028 95</span>
+            <span>+84 363 237 437</span>
           </li>
           <li>
             <i className="fa fa-envelope" />
@@ -32,7 +32,7 @@ export default function ContactMe() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              mvtnhan.vercel.app
+              https://github.com/mvtnhan
             </a>
           </li>
           <li>

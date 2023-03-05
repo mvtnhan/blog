@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 import { Header } from "./header.js";
-import LeftColumn from "./left-column.js";
-import RightColumn from "./right-column.js";
-
 import imgLeftBg from "./images/left-bg.png";
 import imgMainBg from "./images/main-bg.png";
+import LeftColumn from "./left-column.js";
+import RightColumn from "./right-column.js";
 
 export default function Resume() {
   return (

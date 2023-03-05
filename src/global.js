@@ -11,7 +11,7 @@ export const global = css`
   html,
   body,
   body > div {
-    min-height: 100vh;
+    // min-height: 100vh;
   }
 
   .page[data-size="A4"] {
