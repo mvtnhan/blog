@@ -31,11 +31,11 @@ export default function Projects() {
             projectname="WAV to MIDI"
             description="Building a simple online WAV to MIDI converter using ReactJS, TypeScript, NextJS and Styled-Component."
           />
-          {/* <BlockProjects
+          <BlockProjects
             link="https://fun-with-ai-mvtnhan.vercel.app"
             projectname="Chat With AI GPT-3"
             description="GPT-3 is a powerful AI model created by OpenAI."
-          /> */}
+          />
         </>
       </BlockContent>
     </div>

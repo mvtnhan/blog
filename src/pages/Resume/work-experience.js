@@ -7,16 +7,16 @@ export default function WorkExperience() {
   return (
     <div>
       <BlockHeader title="Work Experience" />
-      <BlockWorkExp
+      {/* <BlockWorkExp
         company="EASTPLAYERS"
         // year="03/2021 - Present"
         projectname="Front-end Developer"
         // description={<a href="null">Front-end Developer</a>}
-      />
+      /> */}
 
       <BlockWorkExp
         company="TMA Solutions"
-        // year="03/2021 - Present"
+        year="03/2021 - Present"
         projectname="Front-end Developer"
         description={
           <a href="null">
